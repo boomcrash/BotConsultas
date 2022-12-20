@@ -227,10 +227,10 @@ def sms_reply():
     mensaje = request.json
     texto=mensaje["sms"]
     respuesta = response(str(texto))
-    return str(respuesta)
+    return mensaje
   except:
     respuesta="NO TE ENTENDI"
-    return str(respuesta)
+    return mensaje
 
 
 if __name__ == "__main__":
