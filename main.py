@@ -231,6 +231,10 @@ def sms_reply():
   except Exception as e:
     return e
 
+@app.route("/products", methods=['GET'])
+def getProducts():
+  return "hola"
+
 
 if __name__ == "__main__":
     app.run(debug=True)
