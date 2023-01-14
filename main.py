@@ -30,7 +30,18 @@ dir_path = os.path.dirname(os.path.realpath(__file__))
 dir_path=dir_path.replace("\\","/")
 with open("data_bot/data.json") as file:
   database=json.load(file)
-
+#quitar tildes
+def quitarTildes(frase):
+  replacements = (
+    ("á", "a"),
+    ("é", "e"),
+    ("í", "i"),
+    ("ó", "o"),
+    ("ú", "u"),
+  )
+  for a, b in replacements:
+    frase = frase.replace(a, b).replace(a.upper(), b.upper())
+  return frase
 
 #PARTE 2  
 words=[]
@@ -125,7 +136,7 @@ net=tflearn.input_data(shape=[None,len(training[0])])
 #neuronas intermedias(hidden layers)
 net=tflearn.fully_connected(net,int(len(training[0])),activation='relu')
 net=tflearn.fully_connected(net,int(len(training[0])),activation='softplus')
-net=tflearn.dropout(net,0.5)
+net=tflearn.dropout(net,0.7)
 #neuronas de salida(exit layers)
 net=tflearn.fully_connected(net,len(exit[0]), activation='Softmax')
 #aplicamos regresion a nuestra red
@@ -139,42 +150,11 @@ model =tflearn.DNN(net,tensorboard_verbose=0)
 if os.path.isfile(dir_path+"/Entrenamiento/model.tflearn.index"):
   model.load(dir_path+"/Entrenamiento/model.tflearn")
 else:
-  model.fit(training,exit, show_metric=True, batch_size=20,n_epoch=1000)
+  model.fit(training,exit, show_metric=True, batch_size=20,n_epoch=300)
   model.save("Entrenamiento/model.tflearn")
 
 #EVALUACION DEL MODELO
 print("EVALUACION DEL MODELO",model.evaluate(training,exit),"%")
-
-#PARTE 4
-terror=["https://www.youtube.com/watch?v=j-8gV_gLFkE","https://www.youtube.com/watch?v=n42mdgKaGv0","https://www.youtube.com/watch?v=KKiSXBljcTU","https://www.youtube.com/watch?v=HZbqp4yM84Y"]
-suspenso=["https://www.youtube.com/watch?v=X48Ug9BIZQA","https://www.youtube.com/watch?v=lLvKNEHTTjU","https://www.youtube.com/watch?v=qEvL8hD09GY","https://www.youtube.com/watch?v=LBujQAcdrec"]
-drama=["https://www.youtube.com/watch?v=c06UdG7ydaI","https://www.youtube.com/watch?v=B0chmofGqpk","https://www.youtube.com/watch?v=o8QN2oQL0Rs","https://www.youtube.com/watch?v=zEjo9MEr1Ak"]
-accion=["https://www.youtube.com/watch?v=4sV28IXFIy8","https://www.youtube.com/watch?v=er6X4MhiNNc","https://www.youtube.com/watch?v=xTANWIJcSIM","https://www.youtube.com/watch?v=o8LGXCQXEwY"]
-romantica=["https://www.youtube.com/watch?v=hpaEBrthHV0","https://www.youtube.com/watch?v=gdVFND0FnyI","https://www.youtube.com/watch?v=RflzgIUWSzc","https://www.youtube.com/watch?v=1BAJ4YWoiRg"]
-def recomendarYt(tag,respuesta):
-  if tag in "suspenso":
-    respuesta=respuesta+"\n"+random.choice(suspenso)
-  elif tag in "drama":
-    respuesta=respuesta+"\n"+random.choice(drama)
-  elif tag in "accion":
-    respuesta=respuesta+"\n"+random.choice(accion)
-  elif tag in "romantica":
-    respuesta=respuesta+"\n"+random.choice(romantica)
-  elif tag in "terror":
-    respuesta=respuesta+"\n"+random.choice(terror)
-  return  respuesta
-def quitarTildes(frase):
-  replacements = (
-    ("á", "a"),
-    ("é", "e"),
-    ("í", "i"),
-    ("ó", "o"),
-    ("ú", "u"),
-  )
-  for a, b in replacements:
-    frase = frase.replace(a, b).replace(a.upper(), b.upper())
-  return frase
-
 
 def response(texto):
   # ojoooooooooooooooooooooo
@@ -193,7 +173,7 @@ def response(texto):
     results=model.predict([numpy.array(bucket)])
     index_results=numpy.argmax(results)
     max=results[0][index_results]
-    if max>0.1:
+    if max>0:
       #print(index_results)
       #print(max)
       target=tags[index_results]
@@ -203,12 +183,10 @@ def response(texto):
         if tagAux['tag']==target:
            answer=tagAux['responses']
            answer=random.choice(answer)
-      answer=recomendarYt(target,answer)
       print("pregunta: ",texto,"\n respuesta: ",answer,"\n porcentaje: ",max,"\n tag: ",target)
     else:
-      target = tags[index_results]
-      print("NO TE ENTENDI")
-      print("pregunta: ", texto, "\n porcentaje: ", max, "\n tag: ", target)
+      answer= "Lo siento, no tengo información actualizada sobre esta pregunta. Por favor, contáctenos a través de nuestro número de WhatsApp que se encuentra en nuestra página web para obtener la información actualizada."
+      print("pregunta: ", texto,"\n respuesta: ",answer, "\n porcentaje: ", max)
     return answer
 
 print("HABLA CONMIGO")

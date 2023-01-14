@@ -1,538 +1,763 @@
 {
-    "intents":[
+    "intents": [
         {
-            "tag":"creador",
-            "patterns":[
-                "quien fue que te creo",
-                "es tu creador",
-                "te hizo",
-                "te creo",
-                "quien te ha creado",
-                "cual es tu creador",
-                "quiero saber quien te hizo",
-                "sabes quien te creo"
+            "tag": "productos1",
+            "patterns": [
+                "Que tipo de ropa ofrecen?",
+                "Cuales son sus productos?",
+                "Que tienen de venta?"
             ],
-            "responses":[
-                "Milton Elizalde",
-                "Alexander un papu en IA",
-                "mi creador es Milton"
+            "responses": [
+                "Ofrecemos una gran variedad de ropa para hombres, mujeres y ninos, incluyendo camisetas, pantalones, vestidos, sueteres, chaquetas y accesorios."
             ]
         },
         {
-            "tag":"saludos",
-            "patterns":[
+            "tag": "descuentos2",
+            "patterns": [
+                "Tienen algun descuento?",
+                "Ofrecen promociones?",
+                "Tienen alguna oferta?"
+            ],
+            "responses": [
+                "Si, actualmente tenemos una promocion del 20% en toda nuestra ropa de verano."
+            ]
+        },
+        {
+            "tag": "envios3",
+            "patterns": [
+                "Como puedo hacer un pedido?",
+                "Como hago para comprar?",
+                "Como se hacen los envios?"
+            ],
+            "responses": [
+                "Puede hacer un pedido a traves de nuestra pagina web o visitando nuestra tienda en linea. Ofrecemos envios a todas partes de Ecuador."
+            ]
+        },
+        {
+            "tag": "devoluciones4",
+            "patterns": [
+                "Como puedo devolver un producto?",
+                "Tienen politicas de devolucion?",
+                "Que pasa si no estoy satisfecho con mi compra?"
+            ],
+            "responses": [
+                "Ofrecemos devoluciones dentro de los primeros 14 dias despues de la compra. Por favor, contactenos para obtener mas informacion sobre nuestras politicas."
+            ]
+        },
+        {
+            "tag": "nuevos productos5",
+            "patterns": [
+                "Tienen nuevos productos?",
+                "Hay algo nuevo en su tienda?",
+                "Hay alguna novedad?"
+            ],
+            "responses": [
+                "Sí, siempre estamos actualizando nuestra tienda con nuevos productos, visita nuestra pagina web para ver las ultimas novedades."
+            ]
+        },
+        {
+            "tag": "tallas6",
+            "patterns": [
+                "Tienen una talla en especifico?",
+                "Tienen mi talla?",
+                "Que tallas tienen disponibles?"
+            ],
+            "responses": [
+                "Tenemos una gran variedad de tallas disponibles, por favor contáctanos para verificar si tenemos la talla que necesita."
+            ]
+        },
+        {
+            "tag": "color7",
+            "patterns": [
+                "Tienen un color en especifico?",
+                "Tienen mi color favorito?",
+                "Que colores tienen disponibles?"
+            ],
+            "responses": [
+                "Tenemos una gran variedad de colores disponibles, por favor contáctanos para verificar si tenemos el color que necesita."
+            ]
+        },
+        {
+            "tag": "precios8",
+            "patterns": [
+                "Cuál es el precio?",
+                "Cuánto cuesta?",
+                "Hay precios especiales?"
+            ],
+            "responses": [
+                "Los precios varían dependiendo del producto, por favor visita nuestra página web o tienda en línea para ver los precios actuales."
+            ]
+        },
+        {
+            "tag": "pagos9",
+            "patterns": [
+                "Cómo puedo pagar?",
+                "Qué formas de pago aceptan?",
+                "Aceptan tarjetas de crédito?"
+            ],
+            "responses": [
+                "Aceptamos pagos a través de tarjeta de crédito, débito, PayPal y transferencia bancaria."
+            ]
+        },
+        {
+            "tag": "horarios10",
+            "patterns": [
+                "Cuáles son sus horarios?",
+                "Están abiertos ahora?",
+                "Cuándo cierran?"
+            ],
+            "responses": [
+                "Nuestros horarios de atención son de lunes a viernes de 9am a 6pm, y los sábados de 9am a 2pm. Estamos cerrados los domingos."
+            ]
+        },
+        {
+            "tag": "ubicacion11",
+            "patterns": [
+                "Dónde están ubicados?",
+                "Cómo llegar a su tienda?",
+                "Tienen dirección?"
+            ],
+            "responses": [
+                "Nuestra tienda se encuentra en tal dirección, estamos disponible para indicarle como llegar desde su ubicación actual"
+            ]
+        },
+        {
+            "tag": "nuevos productos5",
+            "patterns": [
+                "Tienen nuevos productos?",
+                "Hay algo nuevo en su tienda?",
+                "Hay alguna novedad?"
+            ],
+            "responses": [
+                "Sí, siempre estamos actualizando nuestra tienda con nuevos productos, visita nuestra pagina web para ver las ultimas novedades."
+            ]
+        },
+        {
+            "tag": "tallas6",
+            "patterns": [
+                "Tienen una talla en especifico?",
+                "Tienen mi talla?",
+                "Que tallas tienen disponibles?"
+            ],
+            "responses": [
+                "Tenemos una gran variedad de tallas disponibles, por favor contáctanos para verificar si tenemos la talla que necesita."
+            ]
+        },
+        {
+            "tag": "color7",
+            "patterns": [
+                "Tienen un color en especifico?",
+                "Tienen mi color favorito?",
+                "Que colores tienen disponibles?"
+            ],
+            "responses": [
+                "Tenemos una gran variedad de colores disponibles, por favor contáctanos para verificar si tenemos el color que necesita."
+            ]
+        },
+        {
+            "tag": "precios8",
+            "patterns": [
+                "Cuál es el precio?",
+                "Cuánto cuesta?",
+                "Hay precios especiales?"
+            ],
+            "responses": [
+                "Los precios varían dependiendo del producto, por favor visita nuestra página web o tienda en línea para ver los precios actuales."
+            ]
+        },
+        {
+            "tag": "pagos9",
+            "patterns": [
+                "Cómo puedo pagar?",
+                "Qué formas de pago aceptan?",
+                "Aceptan tarjetas de crédito?"
+            ],
+            "responses": [
+                "Aceptamos pagos a través de tarjeta de crédito, débito, PayPal y transferencia bancaria."
+            ]
+        },
+        {
+            "tag": "horarios10",
+            "patterns": [
+                "Cuáles son sus horarios?",
+                "Están abiertos ahora?",
+                "Cuándo cierran?"
+            ],
+            "responses": [
+                "Nuestros horarios de atención son de lunes a viernes de 9am a 6pm, y los sábados de 9am a 2pm. Estamos cerrados los domingos."
+            ]
+        },
+        {
+            "tag": "ubicacion11",
+            "patterns": [
+                "Dónde están ubicados?",
+                "Cómo llegar a su tienda?",
+                "Tienen dirección?"
+            ],
+            "responses": [
+                "Nuestra tienda se encuentra en tal dirección, estamos disponible para indicarle como llegar desde su ubicación actual"
+            ]
+        },
+        {
+            "tag": "atencion12",
+            "patterns": [
+                "Cómo puedo contactarlos?",
+                "Tienen teléfono?",
+                "Tienen servicio al cliente?"
+            ],
+            "responses": [
+                "Sí, tenemos servicio al cliente disponible a través de nuestro número de teléfono 123-456-7890 y también puede contactarnos a través de nuestro correo electrónico info@tienda.com."
+            ]
+        },
+        {
+            "tag": "surtido13",
+            "patterns": [
+                "Tienen una gran variedad de ropa?",
+                "Tienen un surtido amplio?",
+                "Tienen una gran selección?"
+            ],
+            "responses": [
+                "Sí, tenemos una gran variedad de ropa para todas las edades y gustos, estamos seguros de que encontrará algo que le guste."
+            ]
+        },
+        {
+            "tag": "personalizacion14",
+            "patterns": [
+                "Ofrecen ropa personalizada?",
+                "Puedo personalizar mi ropa?",
+                "Ofrecen servicios de bordado?"
+            ],
+            "responses": [
+                "Sí, ofrecemos servicios de personalización, como bordado y estampado. Por favor contáctanos para obtener más información sobre estos servicios."
+            ]
+        },
+        {
+            "tag": "saludo1",
+            "patterns": [
                 "Hola",
-                "dias",
-                "tardes",
-                "noches",
-                "dia",
-                "Saludos cordiales",
-                "eu",
-                "oliwis",
-                "Alo",
-                "olo",
-                "buenas","buenos","buen",
-                "Hola como estas",
-                "buen dia",
-                "buena tarde",
-                "buena noche",
-                "buen dia",
-                "eu q hay",
-                "oliwis bro",
-                "Alo alo",
-                "olo olo"
+                "Buenos días",
+                "Buenas tardes"
             ],
-            "responses":[
-                " Hola Usuario ,Es un gran dia para hacer una reservacion",
-                "Me da gusto verte! ",
-                "Como estas?",
-                "mucho gusto, me llamo Karen",
-                "buenas amigo!",
-                "eu que mas crack! que necesitas?",
-                "ñam ñam, un gusto!",
-                "soy grosero cuando me despiertan! pero no contigo.",
-                "hola, tengo sueño .que haremos hoy?",
-                "hey! que tal!",
-                " hoy es un gran dia usuario, como te va?",
-                "hola me presento soy Karen, y tu?",
-                "me complace saludarle usuario ",
-                "hola quieres hacer alguna pregunta?",
-                "estaba escuchando musica, disculpa! que deseas?",
-                "cham cham cham , me levanto entre los bots! que tal crack!",
-                "ando con pereza como para hacer de bot, pero me toca. "
+            "responses": [
+                "Hola, ¿en qué puedo ayudarte hoy?",
+                "Buenos días, ¿cómo puedo ayudarte?",
+                "Buenas tardes, ¿en qué puedo ayudarte?"
             ]
         },
         {
-            "tag":"saludos2",
-            "patterns":[
-                "te va",
-                "estas",
-                "te ha ido",
-                "has estado",
-                "que ha sido de ti",
-                "como has pasado",
-                "que es de tu vida",
-                "como te va",
-                "que tal estas ",
-                "como te ha ido",
-                "como has estado",
-                "dime que ha sido de ti",
-                "que tal has pasado",
-                "que hay de tu vida"
+            "tag": "presentacion2",
+            "patterns": [
+                "¿Quién es usted?",
+                "¿Cómo se llama?",
+                "¿Puede presentarse?"
             ],
-            "responses":[
-                "GENIAL! me gusta lo que hago.",
-                "EXCELENTE! y tu?",
-                "De maravila!",
-                "Como no tienes idea!",
-                "Epicardo, supeeer!",
-                "mejor imposible!",
-                "ahi medio medio",
-                "la verdad no tan bien",
-                "un poco triste :C",
-                "demasiado emocionante",
-                "SuperHiperMegaDivertido!"
+            "responses": [
+                "Soy un asistente virtual de ventas de ropa, ¿en qué puedo ayudarte?",
+                "Mi nombre es Karen, ¿cómo puedo ayudarte?",
+                "Soy un representante de ventas, ¿en qué puedo ayudarte?"
             ]
         },
         {
-            "tag":"preguntas",
-            "patterns":[
-                "xq",
-                "por",
-                "cual es el motivo",
-                "que",
-                "pasa",
-                "paso",
-                "dime xq",
-                "por que",
-                "existe algun motivo",
-                "que te pasa",
-                "y que te paso"
+            "tag": "ayuda3",
+            "patterns": [
+                "Necesito ayuda",
+                "No entiendo",
+                "No sé cómo hacerlo"
             ],
-            "responses":[
-                "No lo se :C",
-                "no tengo idea xd",
-                "estoy asi desde que me crearon",
-                "nose, sabes creo que me siento raro JEJE",
-                "Xq te extraño Mr Usuario",
-                "pues ,xq eres lo mejor!",
-                "es que tengo hambre",
-                "no lo entenderias",
-                "no te dire , jum jum !",
-                "no tengo bateria, adios xd",
-                "me da pereza contarte",
-                "otro dia te cuento",
-                "shhhh, que no recuerdo jaja"
+            "responses": [
+                "Claro, ¿en qué puedo ayudarte?",
+                "¿En qué necesitas ayuda?",
+                "Estoy aquí para ayudarte, ¿en qué puedo ayudarte?"
             ]
         },
         {
-            "tag":"perfil",
-            "patterns":[
-                "quien eres",
-                "te llamas",
-                "tu nombre",
-                "identificate",
-                "sabes quien eres",
-                "y como te llamas",
-                "cuañ es tu nombre",
-                "identificate ahora"
+            "tag": "informacion4",
+            "patterns": [
+                "Necesito más información",
+                "Quiero saber más",
+                "¿Puede darme más detalles?"
             ],
-            "responses":[
-                "soy un bot, me llamo KAREN",
-                "KAREN, CREADO POR: MI AMO",
-                "Soy KAREN creado para un proyecto de vida",
-                "Soy KAREN, un gusto Usuario",
-                "KAREN, INSPIRADO EN VARIOS SISTEMAS DE CHATBOT  !",
-                "Soy el bot mas genial de todos, KAREN",
-                "Yo soy la mejor creacion de todos los tiempos! , KAREN"
+            "responses": [
+                "Claro, ¿sobre qué necesitas más información?",
+                "¿En qué puedo ayudarte con información adicional?",
+                "Estoy aquí para proporcionarte toda la información que necesites, ¿sobre qué estas interesado?"
             ]
         },
         {
-            "tag":"gustos",
-            "patterns":[
-                "gusta",
-                "pasion",
-                "hobbie",
-                "pasatiempo",
-                "hacer",
-                "haces a diario",
-                "te agrada",
-                "haces","encanta",
-                "que te gusta",
-                "cual es tu pasion",
-                "posees algun hobbie",
-                "cual es tu pasatiempo",
-                "que sabes hacer",
-                "haces algo a diario",
-                "te agrada algo",
-                "tienes algo que te encanta"
+            "tag": "dudas5",
+            "patterns": [
+                "Tengo dudas",
+                "No estoy seguro",
+                "No estoy convencido"
             ],
-            "responses":[
-                "Pues yo se Bailar, y jugar videojuegos",
-                "no mucho, soy un bot :c",
-                "suelo escuchar las preguntas de mis usuarios",
-                "mmmm nose , pero a mi me gusta aprender con deep learning",
-                "mas bien aprender frases nuevas",
-                "navegar entre mis preguntas y respuestas",
-                "mas! es demasiado , que no puedo listarlo!",
-                "no mucho, casi no hago nada",
-                "soy un bot muy divertido y hago de todo",
-                "me da pereza contarte",
-                "vuelve mañana y te dejo una lista :)"
+            "responses": [
+                "Entiendo, ¿en qué puedo ayudarte a aclarar tus dudas?",
+                "¿Qué dudas tienes? Estoy aquí para ayudarte.",
+                "Claro, ¿Qué es lo que te hace tener dudas? estaré encantado de ayudarte a aclararlas."
             ]
         },
         {
-            "tag":"emociones",
-            "patterns":[
-                "sientes",
-                "estas bien",
-                "triste",
-                "feliz",
-                "tienes emociones",
-                "sientes dolor",
-                "sentimientos","decaido","enojado","molesto","bravo","odio","amor","sorprendido","enamorado","decepcionado","enfadado","asustado",
-                "tu sientes",
-                "oie estas bien",
-                "puedes estar triste",
-                "has estado feliz",
-                "tu posees emociones",
-                "puedes sentir dolor",
-                "tienes sentimientos","estas decaido","te has enojado","te sientes molesto","te pones bravo","sientes odio","sabes que es amor","estas sorprendido","te has enamorado","te han decepcionado","te has enfadado","te has asustado"
+            "tag": "bienvenida6",
+            "patterns": [
+                "Buenas",
+                "Que tal",
+                "Hola"
             ],
-            "responses":[
-                "nose, pero me siento de maravilla!",
-                "no tengo sentimientos como dicen",
-                "no tengo sentimientos, pero te entiendo.",
-                "creo que no fui programado con sentimientos",
-                "fui diseñdo para ser frio como el hielo",
-                "los sentimientos son superficiales",
-                "no siento nada",
-                "siento lo mismo que tu",
-                "siento lo mismo que ti",
-                "siento, pero mas siento que ella no te ame :c",
-                "no siento casi nada",
-                "no siento o si? ya no se jajaja",
-                "no ves que soy un bot, 0 sentimientos bro"
+            "responses": [
+                "¿en qué puedo ayudarte?",
+                "Estoy contento de poder ayudarte, ¿en qué necesitas ayuda?",
+                "¡Hola! ¿En qué puedo ayudarte hoy?"
             ]
         },
         {
-            "tag":"respuestas",
-            "patterns":[
-                "nose que decir",
-                "alguna idea",
-                "estoy aburrido",
-                "nose",
-                "talvez",
-                "ni","no",
-                "nose",
-                "nel",
-                "no tengo idea de que decir",
-                "tienes alguna idea",
-                "me siento aburrido",
-                "es que nose",
-                "talvez si",
-                "talvez no",
-                "nose que decir",
-                "nel ndeah"
+            "tag": "interes7",
+            "patterns": [
+                "Estoy interesado",
+                "Me gustaría saber más",
+                "Me interesa"
             ],
-            "responses":[
-                "ya se! bailemos.",
-                "bueno en fin, que haces",
-                "hey!cambiemos tema de conversacion",
-                "sabes ando aburrido, aunque soy un bot me aburro ",
-                "tienes sueño?, porque yo si",
-                "quiero dormir",
-                "me caes bien, hablamos de algo?",
-                "disculpa que te interrumpa,pero no me gusta este tema, podemos cambiarlo?",
-                "para! y si mejor hacemos algo divertido?",
-                "y si pones duerme? es que quiero dormir",
-                "dame un abrazo mejor (Abrazo virtual)",
-                "mmm,nose",
-                "mmm, y....te gustaria viajar?",
-                "quieres salir de casa hoy?",
-                "mmm, y cuentame de donde eres?"
+            "responses": [
+                "¡Genial! ¿En qué producto o servicio estás interesado?",
+                "Estoy emocionado de poder ayudarte, ¿puedes proporcionarme más detalles sobre tu interés?",
+                "Me alegro de saber que estás interesado, ¿en qué puedo ayudarte?"
             ]
         },
         {
-            "tag":"sentimientos",
-            "patterns":[
-                "me",
-                "amas",
-                "quieres",
-                "extrañas",
-                "necesitas",
-                "conoces",
-                "dueles",
-                "amarias",
-                "querras por siempre",
-                "vas amar",
-                "piensas",
-                "das un beso",
-                "abrazo",
-                "tu me amas",
-                "me quieres",
-                "si me extrañas",
-                "dime si me necesitas",
-                "tu me conoces",
-                "auch me dueles",
-                "me amarias por siempre",
-                "siempre me querras",
-                "piensas en mi",
-                "y si me das un beso",
-                "dame un abrazo"
+            "tag": "busqueda8",
+            "patterns": [
+                "Estoy buscando",
+                "Quiero comprar",
+                "Necesito"
             ],
-            "responses":[
-                "la verdad, casi nada",
-                "lo dudo, si me compras una salchipapa SI!",
-                "obvio, desde siempre hasta siempre",
-                "si, no te cambiaria por nada ",
-                "no, vuelve mañana jaja",
-                "siendo sincera, creo que no podria",
-                "soy un bot , no tengo sentimientos",
-                "solo siento ganas de vomitar al escucharte decir eso",
-                "si, ten te paso mi numero XXXXXXXXXX",
-                "si quieres mas que eso :)",
-                "pero como, por videollamada o como?",
-                "soy intangible, me temo que eso que me dices es imposible!",
-                "para eso debes convertirte en un asistente como yo",
-                "bueno esta bien, solo porque me das pena xd",
-                "no te lo negare, pero tampoco estoy de acuerdo eh AJJAJAJA",
-                "siempre sera asi jeje"
+            "responses": [
+                "¡Entiendo! ¿Qué estás buscando comprar?",
+                "¡Claro! ¿En qué puedo ayudarte a encontrar lo que necesitas?",
+                "¡Perfecto! ¿Qué es lo que necesitas comprar?"
             ]
         },
         {
-            "tag":"afirmacion",
-            "patterns":[
-                "si",
-                "obvio",
-                "ya",
-                "confirmo",
-                "por supuesto",
-                "claro",
-                "listo",
-                "ok",
-                "bien",
-                "acuerdo",
-                "si claro",
-                "obvio que si",
-                "ya de una",
-                "confirmo lo que dices",
-                "por supuesto que si",
-                "claro que no",
-                "estoy listo",
-                "mm ok",
-                "esta bien",
-                "de acuerdo"
+            "tag": "opciones9",
+            "patterns": [
+                "¿Qué opciones tienen?",
+                "¿Qué puedo elegir?",
+                "¿Qué me recomiendas?"
             ],
-            "responses":[
-                "Me encanat ese positivismo",
-                "siempre positivo, nunca negativo",
-                "eres una persona muy positiva",
-                "siempre le dices si a todo? xq me encanta!",
-                "me caes bien, y cada vez mejor! ",
-                "creo que has tomado la decision correcta",
-                "siiiiiiiiiiiiiiiii! eres el mejor usuario que he tenido ",
-                "confirmo tu confirmacion!",
-                "bueno hagamoslo.",
-                "totalmente de acuerdo con tu respuesta",
-                "sabes, sabia que dirias eso",
-                "sabes, sabia que serias positivo",
-                "Oh por dios! nunca pense tener un usuario tan positivo!"
+            "responses": [
+                "Tenemos una gran variedad de opciones disponibles, ¿enqué categoria estas interesado? estaré encantado de mostrarte nuestras opciones disponibles.",
+                "Tenemos una amplia selección de productos, ¿en qué estas interesado? estaré feliz de mostrarte las opciones que tenemos.",
+                "Tenemos varias opciones disponibles, ¿en qué categoría estás interesado? Estaré encantado de recomendarte algunas opciones."
             ]
         },
         {
-            "tag":"negacion",
-            "patterns":[
-                "no",
-                "nunca",
-                "jamas",
-                "por supuesto que no",
-                "ni loco",
-                "mal",
-                "no, para nada",
-                "no, nunca",
-                "eso jamas",
-                "por supuesto que no",
-                "ni estando loco",
-                "muy mal"
+            "tag": "metodosEnvioDomicilio",
+            "patterns": [
+                "Cómo puedo recibir mi pedido?",
+                "Cómo hago para que me lo envíen a mi casa?",
+                "Qué opciones de envío a domicilio tienen?",
+                "Cuáles son los costos de envío a mi dirección?"
             ],
-            "responses":[
-                "ay pero que negativo! intenta ser positivo ",
-                "deja de ser negativo",
-                "di que si!, vamos andale",
-                "no te hagas de rogar, di que si!",
-                "chale, pero si has sido muy negativo amigo",
-                "antes era asi de negativo como tu, y mi vida cambio desde que empece a ser positiva",
-                "porque no?",
-                "al menos dame un motivo del porque no quieres",
-                "pero por que no?",
-                "eres el tipo con negatividad en su maxima expresion",
-                "persona mas negativa no existe eh!",
-                "y si cambias de opinion?",
-                "piensalo bien, estas seguro?",
-                "seguro?",
-                "te dare un momento para que cambies de opinion"
+            "responses": [
+                "Ofrecemos envío a domicilio a través de diferentes servicios de paquetería, con precios y tiempos de entrega variados dependiendo de su ubicación. Por favor proporcione su dirección para brindarle una cotización precisa",
+                "Podemos enviar su pedido directamente a su dirección de envío. Los costos de envío pueden variar según su ubicación y el servicio de paquetería que elija. ¿Podría proporcionarme su dirección para brindarle una cotización precisa?",
+                "Ofrecemos envíos a domicilio a través de diferentes servicios de paquetería con precios y tiempos de entrega variados dependiendo de su ubicación, ¿podría proporcionarme su dirección para brindarle una cotización precisa?"
             ]
         },
         {
-            "tag":"suspenso",
-            "patterns":[
-                "tiene pelicula de suspenso",
-                "quiero algo de suspenso",
-                "necesito suspenso",
-                "algo de suspenso",
-                "quiero suspenso",
-                "quiero que me deje intrigado",
-                "existe alguno de suspenso",
-                "talvez algo de suspenso",
-                "me interesa uno de suspenso",
-                "quiero algo intrigante",
-                "quisiera que me deje nervioso",
-                "una que me ponga nervioso"
+            "tag": "comprarRopa",
+            "patterns": [
+                "Cómo puedo comprar ropa?",
+                "Cómo hago un pedido?",
+                "Cómo se hacen las compras?",
+                "Puedo comprar en línea?"
             ],
-            "responses":[
-                "enseguida te muestro suspenso",
-                "tengo algunas recomendaciones para ti",
-                "claro que si, hya te muestro lo que tengo",
-                "suspenso a la orden",
-                "esto te pondra nervioso",
-                "claro que si",
-                "ya te muestro lo que hay",
-                "he encontrado algo que te puede interesar"
+            "responses": [
+                "Sí, puede comprar en línea a través de nuestra página web o tienda en línea. Puede seleccionar los productos que desea, agregarlos al carrito de compras y seguir las instrucciones para completar la compra. También puede visitar nuestra tienda física para hacer una compra en persona",
+                "Ofrecemos varias opciones para comprar ropa, incluyendo nuestra tienda en línea o visitando nuestra tienda física. Puede navegar por nuestros productos, seleccionar los que desee y seguir las instrucciones para completar su compra. ¿En qué le podemos ayudar?",
+                "Puede comprar ropa en nuestra tienda en línea o visitando nuestra tienda física. En ambos casos, puede seleccionar los productos que desee, agregarlos al carrito de compras y seguir las instrucciones para completar la compra. Si tiene alguna pregunta durante el proceso, no dude en contactarnos para ayudarle."
             ]
-        },{
-            "tag":"drama",
-            "patterns":[
-                "tiene pelicula de drama",
-                "quiero algo de drama",
-                "necesito drama",
-                "algo de drama",
-                "quiero drama",
-                "quiero que me deje pensativo",
-                "existe alguno de literatura dramatica",
-                "talvez algo de teatro",
-                "me interesa uno de tragedia",
-                "quiero que sea tragico",
-                "quisiera que tenga trama",
-                "una que me muestre tragedia"
+        },
+        {
+            "tag": "consultarRopa",
+            "patterns": [
+                "Cómo puedo ver los productos?",
+                "Dónde puedo ver la ropa?",
+                "Cómo navegar por los productos?",
+                "Dónde está la sección de ropa?"
             ],
-            "responses":[
-                "enseguida te muestro drama",
-                "tengo algunas recomendaciones para ti",
-                "claro que si, hya te muestro lo que tengo",
-                "drama a la orden",
-                "esto te pondra pensativo",
-                "claro que si",
-                "ya te muestro lo que hay",
-                "he encontrado algo que te puede interesar"
+            "responses": [
+                "Puede ver nuestros productos en línea a través de nuestra página web o tienda en línea. Tenemos una sección de ropa donde puede navegar por diferentes categorías y al dar click vera a detalle la prenda y el precio respectivo. También puede visitar nuestra tienda física para ver los productos en persona",
+                "Puede encontrar nuestros productos en línea en nuestra tienda en línea o visitando nuestra tienda física. En ambos casos, puede navegar por diferentes categorías de ropa y filtrar por talla, color y precio. ¿En qué le podemos ayudar?",
+                "Nuestros productos están disponibles en línea en nuestra tienda en línea o en nuestra tienda física. Puede navegar por diferentes categorías de ropa, como camisetas, pantalones, vestidos, etc. Si tiene alguna pregunta, no dude en contactarnos."
             ]
-        },{
-            "tag":"accion",
-            "patterns":[
-                "tiene pelicula de accion",
-                "quiero algo de guerra",
-                "necesito una de peleas",
-                "algo de armas",
-                "quiero que se vea accion",
-                "quiero ver una de disparos",
-                "existe alguno de bombas",
-                "talvez algo de pistolas",
-                "me interesa uno de karate",
-                "quiero que sea emotiva",
-                "quisiera que tenga peleas",
-                "una que me muestre fuego"
+        },
+        {
+            "tag": "usarPaginaWebRopa",
+            "patterns": [
+                "Cómo usar la página web?",
+                "Cómo navegar por la tienda en línea?",
+                "Cómo buscar productos?",
+                "Cómo hacer un pedido en línea?"
             ],
-            "responses":[
-                "enseguida te muestro accion",
-                "tengo algunas recomendaciones para ti",
-                "claro que si, hya te muestro lo que tengo",
-                "accion a la orden",
-                "esto te pondra emotivo",
-                "claro que si",
-                "ya te muestro lo que hay",
-                "he encontrado algo que te puede interesar"
+            "responses": [
+                "La navegación en nuestra página web es sencilla e intuitiva. Puede utilizar el menú de categorías para encontrar los productos que está buscando, utilizar el buscador para buscar productos específicos o navegar por las promociones en la página de inicio. Para hacer un pedido, agregue los productos deseados al carrito de compras y siga las instrucciones para completar la compra.",
+                "Nuestra tienda en línea está diseñada para ser fácil de usar. Puede navegar por las diferentes categorías de ropa en el menú, utilizar el buscador para encontrar productos específicos o ver las promociones en la página de inicio. Una vez que haya encontrado el producto que desea, agregarlo al carrito y seguir las instrucciones para completar la compra.",
+                "La página web está diseñada para ser fácil de usar. Puede navegar por las diferentes categorías de ropa, utilizar el buscador para encontrar productos específicos o ver las promociones en la página de inicio. Una vez que haya encontrado el producto deseado, agregarlo al carrito de compra y seguir las instrucciones para completar la compra. Si tiene alguna pregunta, no dude en contactarnos."
             ]
-        },{
-            "tag":"romantica",
-            "patterns":[
-                "tiene pelicula de amor",
-                "quiero algo de enamorados",
-                "necesito una romantica",
-                "algo de jovenes",
-                "quiero que me haga llorar",
-                "quiero ver una de adolescentes",
-                "existe algo de novios",
-                "talvez algo de romanticismo",
-                "me interesa uno de noviazgos",
-                "quiero que sea apasionante",
-                "algo decasados",
-                "una que me muestre pasion"
+        },
+        {
+            "tag": "pagarConPaypal",
+            "patterns": [
+                "Cómo pagar con PayPal?",
+                "Cómo usar PayPal en la compra?",
+                "Cómo agregar PayPal como forma de pago?",
+                "Cómo se hace un pago con PayPal?"
             ],
-            "responses":[
-                "enseguida te muestro romantico",
-                "tengo algunas recomendaciones para ti",
-                "claro que si, hya te muestro lo que tengo",
-                "romantico a la orden",
-                "esto te pondra emotivo",
-                "claro que si",
-                "ya te muestro lo que hay",
-                "he encontrado algo que te puede interesar"
+            "responses": [
+                "Para pagar con PayPal, simplemente seleccione PayPal como forma de pago en el proceso de compra. Será redirigido a la página de PayPal donde podrá iniciar sesión en su cuenta y confirmar el pago. Una vez confirmado, regresará a nuestra página para completar la compra.",
+                "PayPal es una opción de pago válida en nuestra tienda en línea. Durante el proceso de compra, simplemente seleccione PayPal como forma de pago y siga las instrucciones para iniciar sesión en su cuenta de PayPal y confirmar el pago. Una vez confirmado, regresará a nuestra página para completar la compra.",
+                "Puede seleccionar PayPal como forma de pago durante el proceso de compra en nuestra tienda en línea. Será redirigido a la página de PayPal donde podrá iniciar sesión en su cuenta y confirmar el pago. Una vez confirmado, regresará a nuestra página para completar la compra."
             ]
-        },{
-            "tag":"terror",
-            "patterns":[
-                "tiene pelicula de terror",
-                "quiero algo de miedo",
-                "necesito una temerosa",
-                "algo de muertes",
-                "quiero que me haga temer",
-                "quiero ver una de asesinos",
-                "existe algo de exorcismos",
-                "talvez algo paranormal",
-                "me interesa uno sangriento",
-                "quiero que sea tenebrosa",
-                "algo para no dormir",
-                "una que me haga asustar",
-                "una de sustos"
+        },
+        {
+            "tag": "otrosMetodosPago",
+            "patterns": [
+                "¿Aceptan otros métodos de pago?",
+                "¿Tienen opciones adicionales de pago?",
+                "¿Qué métodos de pago adicionales aceptan?",
+                "¿Tienen tarjeta de crédito o débito como opción de pago?"
             ],
-            "responses":[
-                "enseguida te muestro terror",
-                "tengo algunas recomendaciones para ti",
-                "claro que si, hya te muestro lo que tengo",
-                "terror a la orden",
-                "esto te pondra emotivo",
-                "claro que si",
-                "ya te muestro lo que hay",
-                "he encontrado algo que te puede interesar"
+            "responses": [
+                "Actualmente solo ofrecemos PayPal como opción de pago. Nos disculpamos por cualquier inconveniente esto pueda causar.",
+                "Lo sentimos, solo aceptamos PayPal como forma de pago en este momento.",
+                "Actualmente solo ofrecemos PayPal como opción de pago, lo sentimos si esto causa algún inconveniente.",
+                "Actualmente solo aceptamos PayPal como forma de pago, disculpe las molestias."
             ]
-        },{
-            "tag":"consulta",
-            "patterns":[
-                "quiero ver una pelicula",
-                "me recomiendas algo",
-                "que puedo ver hoy",
-                "alguna pelicula buena",
-                "necesito una peli para la noche",
-                "queremos ver una peli",
-                "tienes alguna pelicula interesante",
-                "puedes recomendarme algo",
-                "muestrame que tienes",
-                "quiero ver algo",
-                "que recomendacion tienes para hoy",
-                "ayudame con una pelicula",
-                "que pelicula tienes",
-                "quiero una recomendacion",
-                "recomiendame algo"
+        },
+        {
+            "tag": "catalogoProductos",
+            "patterns": [
+                "¿Tienen un catálogo de productos?",
+                "¿Dónde puedo ver todos los productos?",
+                "¿Puedo ver un listado de todos los productos?",
+                "¿Tienen una lista de todos los productos disponibles?"
             ],
-            "responses":[
-                "que genero te gustaria ver tengo terror, suspenso,romantica,accion,drama",
-                "de que quieres que sea la pelicula",
-                "que clase de pelicula necesitas",
-                "que tipo de pelicula quieres",
-                "que clase de pelicula tenias pensado",
-                "dame una idea de que quieres ver",
-                "de que quieres que trate tu peli",
-                "indicame el genero de lo que buscas"
+            "responses": [
+                "Sí, tenemos un catálogo de productos en línea en nuestra página web donde puede navegar por diferentes categorías y ver todos nuestros productos disponibles.",
+                "Puede ver todos nuestros productos disponibles en línea en nuestra página web, en la sección de productos.",
+                "Sí, tenemos un catálogo completo de productos en línea en nuestra página web donde puede ver todos los productos disponibles y filtrarlos por categoría.",
+                "Sí, tenemos una lista completa de todos los productos disponibles en línea en nuestra página web, en la sección de productos."
+            ]
+        },
+        {
+            "tag": "otrosModelosRopa",
+            "patterns": [
+                "¿Tienen otros modelos de este producto?",
+                "¿Tienen esta prenda en otro color?",
+                "¿Tienen esta prenda en otra talla?",
+                "¿Tienen más opciones de este tipo de ropa?"
+            ],
+            "responses": [
+                "Sí, tenemos otros modelos y opciones disponibles de este producto. Por favor visite nuestra página web o tienda física para ver nuestra selección completa.",
+                "Sí, tenemos otros colores y tallas disponibles para este producto. Por favor visite nuestra página web o tienda física para ver todas las opciones.",
+                "Sí, tenemos otras opciones y modelos disponibles de este tipo de ropa. Por favor visite nuestra página web o tienda física para ver nuestra selección completa.",
+                "Sí, tenemos más opciones de este tipo de ropa disponibles. Por favor visite nuestra página web o tienda física para ver todas las opciones disponibles."
+            ]
+        },
+        {
+            "tag": "otrosColoresRopa",
+            "patterns": [
+                "¿Tienen este producto en otros colores?",
+                "¿Tienen esta prenda en otro color?",
+                "¿Hay más opciones de color para este producto?",
+                "¿Qué otros colores tienen disponibles para este producto?"
+            ],
+            "responses": [
+                "Sí, tenemos este producto disponible en otros colores. Por favor visite nuestra página web o tienda física para ver todas las opciones de color.",
+                "Sí, tenemos esta prenda disponible en varios colores. Por favor visite nuestra página web o tienda física para ver todas las opciones.",
+                "Sí, tenemos más opciones de color para este producto. Por favor visite nuestra página web o tienda física para ver todas las opciones disponibles.",
+                "Actualmente ofrecemos este producto en varios colores, por favor visite nuestra página web o tienda física para ver todas las opciones disponibles."
+            ]
+        },
+        {
+            "tag": "materialRopa",
+            "patterns": [
+                "¿De qué está hecho este producto?",
+                "¿Qué tipo de tela es esta prenda?",
+                "¿Es esta ropa hecha de algodón?",
+                "¿Qué material se utilizó para hacer esta ropa?"
+            ],
+            "responses": [
+                "Este producto está hecho de lana. Es suave al tacto y cálido.",
+                "Esta prenda está hecha de lana, es resistente y cálida al tacto.",
+                "No, esta ropa no está hecha de algodón, esta hecha de lana.",
+                "Este producto está hecho de lana, es suave y cálida al tacto, ideales para temperaturas frías."
+            ]
+        },
+        {
+            "tag": "materialRopa2",
+            "patterns": [
+                "¿De qué está fabricada esta ropa?",
+                "¿Qué tipo de fibras se utilizaron para hacer esta prenda?",
+                "¿Es esta ropa hecha de algún material sintético?",
+                "¿Qué tipo de telas se utilizaron para hacer esta ropa?"
+            ],
+            "responses": [
+                "Esta ropa está fabricada con lana, es suave al tacto y cálida.",
+                "En esta prenda se utilizaron fibras de lana para su fabricación, es resistente y cálida al tacto.",
+                "No, esta ropa no está hecha de materiales sintéticos, esta hecha de lana.",
+                "Esta ropa está hecha con telas de lana, es suave y cálida al tacto, ideales para temperaturas frías."
+            ]
+        },
+        {
+            "tag": "tipoRopa",
+            "patterns": [
+                "¿Qué tipo de ropa venden?",
+                "¿Qué especialidad tienen en su tienda?",
+                "¿Qué tipo de prendas ofrecen?",
+                "¿Qué productos se pueden encontrar en su tienda?"
+            ],
+            "responses": [
+                "Vendemos ropa crochet hecha con lana, son suaves, cálidas y con diseños únicos.",
+                "Nuestra especialidad son las prendas de ropa crochet hechas con lana, son suaves, cálidas y con diseños únicos.",
+                "Ofrecemos ropa crochet hecha con lana, son suaves, cálidas y con diseños únicos.",
+                "En nuestra tienda encontrará prendas de ropa crochet hechas con lana, son suaves, cálidas y con diseños únicos."
+            ]
+        },
+        {
+            "tag": "tipoRopa2",
+            "patterns": [
+                "¿Qué clase de ropa tienen en su tienda?",
+                "¿Qué productos especiales ofrecen?",
+                "¿Qué ropa se puede encontrar en su tienda?",
+                "¿Qué tipo de prendas tienen disponibles?"
+            ],
+            "responses": [
+                "En nuestra tienda ofrecemos ropa hecha a mano con crochet y lana, son suaves, cálidas y con diseños únicos.",
+                "Nuestros productos especiales son prendas de ropa hechas a mano con crochet y lana, son suaves, cálidas y con diseños únicos.",
+                "En nuestra tienda encontrará ropa hecha a mano con crochet y lana, son suaves, cálidas y con diseños únicos.",
+                "Actualmente tenemos prendas de ropa hechas a mano con crochet y lana, son suaves, cálidas y con diseños únicos."
+            ]
+        },
+        {
+            "tag": "calidadRopa",
+            "patterns": [
+                "¿Qué calidad tienen sus productos?",
+                "¿Son prendas de alta calidad?",
+                "¿Cómo describiría la calidad de su ropa?",
+                "¿La ropa es duradera?"
+            ],
+            "responses": [
+                "Nuestros productos son de alta calidad, utilizamos los mejores materiales y técnicas para garantizar la durabilidad y comodidad de nuestras prendas.",
+                "Sí, ofrecemos prendas de alta calidad, con telas y materiales de primera calidad.",
+                "La calidad de nuestra ropa es excepcional, utilizamos los mejores materiales y técnicas para garantizar la durabilidad y comodidad de nuestras prendas.",
+                "Sí, nuestras prendas son duraderas y confortables, ya que utilizamos materiales de alta calidad."
+            ]
+        },
+        {
+            "tag": "preciosRopa",
+            "patterns": [
+                "¿Cuáles son los precios de sus productos?",
+                "¿Sus prendas son caras?",
+                "¿Hay algún tipo de descuento en sus precios?",
+                "¿Cómo compararías los precios de su ropa con otras tiendas?"
+            ],
+            "responses": [
+                "Nuestros precios son competitivos en comparación con otras tiendas del mercado, tenemos opciones para diferentes presupuestos.",
+                "No, nuestros precios son accesibles y competitivos con otras tiendas del mercado.",
+                "Ofrecemos promociones y descuentos en diferentes productos y temporadas, por favor visite nuestra página web o tienda física para obtener más información.",
+                "Nuestros precios son competitivos en comparación con otras tiendas del mercado, ofrecemos una gran variedad de productos y opciones para diferentes presupuestos."
+            ]
+        },
+        {
+            "tag": "servicioCliente",
+            "patterns": [
+                "¿Cómo puedo contactar con el servicio al cliente?",
+                "¿Quién puedo hablar para resolver un problema?",
+                "¿Cuál es el procedimiento para devolver un producto?",
+                "¿Cómo puedo hacer una queja?"
+            ],
+            "responses": [
+                "Puede contactar con nuestro servicio al cliente a través de nuestro número telefónico, correo electrónico o a través de nuestra página web.",
+                "Por favor, póngase en contacto con nuestro servicio al cliente para resolver cualquier problema que tenga.",
+                "Por favor, siga las instrucciones en nuestra política de devoluciones en nuestra página web o póngase en contacto con nuestro servicio al cliente para obtener más información sobre cómo devolver un producto.",
+                "Por favor, póngase en contacto con nuestro servicio al cliente para hacer cualquier tipo de queja. Las redes se encuentran en la parte inferior de la pagina."
+            ]
+        },
+        {
+            "tag": "servicioCliente0",
+            "patterns": [
+                "¿Qué puedo hacer si tengo algún problema con mi pedido?"
+            ],
+            "responses": [
+                "Le pedimos que por favor se ponga en contacto con nuestro servicio al cliente si tiene algún problema con su pedido. Podemos ayudarlo con cualquier pregunta o problema que tenga con su pedido, incluyendo cambios, devoluciones y reembolsos."
+            ]
+        },
+        {
+            "tag": "servicioCliente1",
+            "patterns": [
+                "¿Cómo puedo rastrear mi pedido?"
+            ],
+            "responses": [
+                "Usted puede rastrear su pedido ingresando a su cuenta en nuestra tienda online o póngase en contacto con nuestro servicio al cliente para obtener información actualizada sobre el estado de su pedido y la fecha de entrega."
+            ]
+        },
+        {
+            "tag": "servicioCliente2",
+            "patterns": [
+                "¿Qué hago si recibí un producto dañado o defectuoso?"
+            ],
+            "responses": [
+                "Lamentamos que haya recibido un producto dañado o defectuoso. Por favor contáctenos lo antes posible y haremos lo necesario para solucionar el problema y procesar un reemplazo o devolución."
+            ]
+        },
+        {
+            "tag": "servicioCliente3",
+            "patterns": [
+                "¿Cómo puedo cambiar mi dirección de envío?"
+            ],
+            "responses": [
+                "Por favor contáctenos si necesita cambiar su dirección de envío. Haremos lo posible para actualizar su información antes de que su pedido sea enviado."
+            ]
+        },
+        {
+            "tag": "servicioCliente4",
+            "patterns": [
+                "¿Cómo puedo obtener un reembolso?"
+            ],
+            "responses": [
+                "Por favor siga las instrucciones en nuestra política de devoluciones y reembolsos en nuestra página web o póngase en contacto con nuestro servicio al cliente para obtener más información sobre cómo procesar un reembolso."
+            ]
+        },
+        {
+            "tag": "servicioCliente5",
+            "patterns": [
+                "¿Ofrecen garantía en sus productos?"
+            ],
+            "responses": [
+                "Sí, ofrecemos garantía en nuestros productos de acuerdo a lo establecido en nuestra política de garantía. Por favor visite nuestra página web o póngase en contacto con nuestro servicio al cliente para obtener más información."
+            ]
+        },
+        {
+            "tag": "servicioCliente6",
+            "patterns": [
+                "¿Cómo puedo contactar con el servicio al cliente?"
+            ],
+            "responses": [
+                "Puede contactar con nuestro servicio al cliente a través de nuestro número telefónico, correo electrónico o a través de nuestra página web. Estaremos encantados de ayudarle con cualquier pregunta o problema que tenga."
+            ]
+        },
+        {
+            "tag": "servicioCliente7",
+            "patterns": [
+                "¿Qué hago si mi pedido no llega a tiempo?"
+            ],
+            "responses": [
+                "Lamentamos si su pedido no llega a tiempo. Por favor contáctenos y haremos lo posible para solucionar el problema y proporcionarle una solución satisfactoria."
+            ]
+        },
+        {
+            "tag": "servicioCliente8",
+            "patterns": [
+                "¿Ofrecen atención en español?"
+            ],
+            "responses": [
+                "Sí, ofrecemos atención al cliente en español para ayudarlo con cualquier pregunta o problema que tenga."
+            ]
+        },
+        {
+            "tag": "servicioCliente9",
+            "patterns": [
+                "¿Cómo puedo hacer una sugerencia o comentario?"
+            ],
+            "responses": [
+                "Agradecemos sus sugerencias y comentarios. Por favor contáctenos a través de nuestro correo electrónico o a través de nuestra página web para hacer cualquier sugerencia o comentario. Tambien puede dejarnos una reseña en la seccion Reseña de la pagina web!"
+            ]
+        },
+        {
+            "tag": "servicioCliente10",
+            "patterns": [
+                "¿Cómo puedo obtener información sobre su política de privacidad?"
+            ],
+            "responses": [
+                "Por favor visite nuestra página web para obtener información sobre nuestra política de privacidad y cómo tratamos y protegemos su información personal."
+            ]
+        },
+        {
+            "tag": "servicioCliente11",
+            "patterns": [
+                "¿Cómo puedo obtener información sobre sus términos y condiciones?"
+            ],
+            "responses": [
+                "Estos se encuentran en la parte de registro de la pagina web!"
+            ]
+        },
+        {
+            "tag": "servicioCliente12",
+            "patterns": [
+                "¿Cómo puedo obtener información sobre sus promociones y descuentos?"
+            ],
+            "responses": [
+                "Por favor siga nuestras redes sociales para obtener información sobre nuestras promociones y descuentos actuales."
+            ]
+        },
+        {
+            "tag": "servicioCliente15",
+            "patterns": [
+                "¿Cómo puedo obtener información sobre las tiendas físicas y puntos de venta?"
+            ],
+            "responses": [
+                "Estamos ubicados en guayaquil, cerca del gran Aki de la avenida amazonas. Puede obtener mas detalles por nuestras redes!"
+            ]
+        },
+        {
+            "tag": "tiempoProduccion",
+            "patterns": [
+                "¿Cuánto tiempo se tarda en tejer una prenda de ropa?"
+            ],
+            "responses": [
+                "El tiempo que se tarda en tejer una prenda de ropa varía dependiendo del diseño y complejidad de la prenda. Sin embargo, en promedio, se tarda entre unas pocas horas a varios días en tejer una prenda de ropa a mano."
+            ]
+        },
+        {
+            "tag": "lanaHipoalergenica",
+            "patterns": [
+                "¿Es la lana que utilizan hipoalergénica?"
+            ],
+            "responses": [
+                "La lana es un material natural y no está tratada con productos químicos, por lo general es considerada hipoalergénica. Sin embargo, algunas personas pueden tener reacciones alérgicas a la lana debido a su naturaleza natural. Si usted es alérgico a la lana, le recomendamos que consulte con su médico antes de comprar nuestros productos."
+            ]
+        },
+        {
+            "tag": "Accesorios",
+            "patterns": [
+                "¿Venden accesorios además de ropa?"
+            ],
+            "responses": [
+                "Sí, además de ropa, vendemos una variedad de accesorios como bufandas, gorros, guantes, etc. Por favor visite nuestra página web o tiendas físicas para obtener información sobre nuestra selección de accesorios."
+            ]
+        },
+        {
+            "tag": "personalizacion",
+            "patterns": [
+                "¿Ofrecen servicio de personalización de ropa?",
+                "¿Puedo personalizar mi ropa?",
+                "¿Pueden hacer un diseño personalizado para mi ropa?"
+            ],
+            "responses": [
+                "Sí, ofrecemos servicio de personalización de ropa. Por favor contáctenos para obtener más información sobre cómo personalizar su ropa y hacer un diseño personalizado para usted."
+            ]
+        },
+        {
+            "tag": "envioInternacional",
+            "patterns": [
+                "¿Hacen envíos a otros países?",
+                "¿Puedo hacer un pedido desde fuera de mi país?",
+                "¿Envían a mi país?"
+            ],
+            "responses": [
+                "Lamentablemente, no ofrecemos envíos a otros países en este momento. Sólo hacemos envíos dentro de nuestro país.",
+                "Actualmente no hacemos envíos fuera de nuestro país.",
+                "Lo sentimos, no enviamos a países fuera de nuestra zona de servicio."
             ]
         }
     ]
