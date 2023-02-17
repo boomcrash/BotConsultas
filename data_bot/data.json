@@ -1,763 +1,439 @@
 {
     "intents": [
         {
-            "tag": "productos1",
+            "tag": "saludo",
             "patterns": [
-                "Que tipo de ropa ofrecen?",
-                "Cuales son sus productos?",
-                "Que tienen de venta?"
+                "¿Cómo estás?",
+                "¿Qué tal estás?",
+                "¿Cómo te encuentras?",
+                "¿Qué hay de nuevo?",
+                "¿Cómo te sientes?",
+                "¿Qué pasa?",
+                "¿Qué onda?",
+                "¿Cómo va todo?",
+                "¿Qué tal todo?",
+                "¿Estás bien?",
+                "buenos dias",
+                "buenas noches",
+                "buenas tardes",
+                "hola, buenas"
             ],
             "responses": [
-                "Ofrecemos una gran variedad de ropa para hombres, mujeres y ninos, incluyendo camisetas, pantalones, vestidos, sueteres, chaquetas y accesorios."
+                "Estoy muy bien, gracias por preguntar.",
+                "Me encuentro bastante bien, gracias por preguntar.",
+                "Estoy bien, ¿y tú?",
+                "Me siento bien, gracias por preguntar.",
+                "Todo bien por acá, ¿y tú cómo estás?",
+                "No me puedo quejar, ¿y tú?",
+                "Todo está bien por acá, gracias por preguntar.",
+                "Me siento genial, gracias por preguntar.",
+                "Estoy bien, ¿y tú cómo estás?",
+                "Todo está excelente, gracias por preguntar.",
+                "uy ya es de dia, ¿en que te ayudo?",
+                "uy ya es de noche, ¿en que te ayudo?",
+                "uy ya es de tarde, ¿en que te ayudo?",
+                "buenas, que necesitas?"
             ]
-        },
-        {
-            "tag": "descuentos2",
-            "patterns": [
-                "Tienen algun descuento?",
-                "Ofrecen promociones?",
-                "Tienen alguna oferta?"
-            ],
-            "responses": [
-                "Si, actualmente tenemos una promocion del 20% en toda nuestra ropa de verano."
-            ]
-        },
-        {
-            "tag": "envios3",
-            "patterns": [
-                "Como puedo hacer un pedido?",
-                "Como hago para comprar?",
-                "Como se hacen los envios?"
-            ],
-            "responses": [
-                "Puede hacer un pedido a traves de nuestra pagina web o visitando nuestra tienda en linea. Ofrecemos envios a todas partes de Ecuador."
-            ]
-        },
-        {
-            "tag": "devoluciones4",
-            "patterns": [
-                "Como puedo devolver un producto?",
-                "Tienen politicas de devolucion?",
-                "Que pasa si no estoy satisfecho con mi compra?"
-            ],
-            "responses": [
-                "Ofrecemos devoluciones dentro de los primeros 14 dias despues de la compra. Por favor, contactenos para obtener mas informacion sobre nuestras politicas."
-            ]
-        },
-        {
-            "tag": "nuevos productos5",
-            "patterns": [
-                "Tienen nuevos productos?",
-                "Hay algo nuevo en su tienda?",
-                "Hay alguna novedad?"
-            ],
-            "responses": [
-                "Sí, siempre estamos actualizando nuestra tienda con nuevos productos, visita nuestra pagina web para ver las ultimas novedades."
-            ]
-        },
-        {
-            "tag": "tallas6",
-            "patterns": [
-                "Tienen una talla en especifico?",
-                "Tienen mi talla?",
-                "Que tallas tienen disponibles?"
-            ],
-            "responses": [
-                "Tenemos una gran variedad de tallas disponibles, por favor contáctanos para verificar si tenemos la talla que necesita."
-            ]
-        },
-        {
-            "tag": "color7",
-            "patterns": [
-                "Tienen un color en especifico?",
-                "Tienen mi color favorito?",
-                "Que colores tienen disponibles?"
-            ],
-            "responses": [
-                "Tenemos una gran variedad de colores disponibles, por favor contáctanos para verificar si tenemos el color que necesita."
-            ]
-        },
-        {
-            "tag": "precios8",
-            "patterns": [
-                "Cuál es el precio?",
-                "Cuánto cuesta?",
-                "Hay precios especiales?"
-            ],
-            "responses": [
-                "Los precios varían dependiendo del producto, por favor visita nuestra página web o tienda en línea para ver los precios actuales."
-            ]
-        },
-        {
-            "tag": "pagos9",
-            "patterns": [
-                "Cómo puedo pagar?",
-                "Qué formas de pago aceptan?",
-                "Aceptan tarjetas de crédito?"
-            ],
-            "responses": [
-                "Aceptamos pagos a través de tarjeta de crédito, débito, PayPal y transferencia bancaria."
-            ]
-        },
-        {
-            "tag": "horarios10",
-            "patterns": [
-                "Cuáles son sus horarios?",
-                "Están abiertos ahora?",
-                "Cuándo cierran?"
-            ],
-            "responses": [
-                "Nuestros horarios de atención son de lunes a viernes de 9am a 6pm, y los sábados de 9am a 2pm. Estamos cerrados los domingos."
-            ]
-        },
-        {
-            "tag": "ubicacion11",
-            "patterns": [
-                "Dónde están ubicados?",
-                "Cómo llegar a su tienda?",
-                "Tienen dirección?"
-            ],
-            "responses": [
-                "Nuestra tienda se encuentra en tal dirección, estamos disponible para indicarle como llegar desde su ubicación actual"
-            ]
-        },
-        {
-            "tag": "nuevos productos5",
-            "patterns": [
-                "Tienen nuevos productos?",
-                "Hay algo nuevo en su tienda?",
-                "Hay alguna novedad?"
-            ],
-            "responses": [
-                "Sí, siempre estamos actualizando nuestra tienda con nuevos productos, visita nuestra pagina web para ver las ultimas novedades."
-            ]
-        },
-        {
-            "tag": "tallas6",
-            "patterns": [
-                "Tienen una talla en especifico?",
-                "Tienen mi talla?",
-                "Que tallas tienen disponibles?"
-            ],
-            "responses": [
-                "Tenemos una gran variedad de tallas disponibles, por favor contáctanos para verificar si tenemos la talla que necesita."
-            ]
-        },
-        {
-            "tag": "color7",
-            "patterns": [
-                "Tienen un color en especifico?",
-                "Tienen mi color favorito?",
-                "Que colores tienen disponibles?"
-            ],
-            "responses": [
-                "Tenemos una gran variedad de colores disponibles, por favor contáctanos para verificar si tenemos el color que necesita."
-            ]
-        },
-        {
-            "tag": "precios8",
-            "patterns": [
-                "Cuál es el precio?",
-                "Cuánto cuesta?",
-                "Hay precios especiales?"
-            ],
-            "responses": [
-                "Los precios varían dependiendo del producto, por favor visita nuestra página web o tienda en línea para ver los precios actuales."
-            ]
-        },
-        {
-            "tag": "pagos9",
-            "patterns": [
-                "Cómo puedo pagar?",
-                "Qué formas de pago aceptan?",
-                "Aceptan tarjetas de crédito?"
-            ],
-            "responses": [
-                "Aceptamos pagos a través de tarjeta de crédito, débito, PayPal y transferencia bancaria."
-            ]
-        },
-        {
-            "tag": "horarios10",
-            "patterns": [
-                "Cuáles son sus horarios?",
-                "Están abiertos ahora?",
-                "Cuándo cierran?"
-            ],
-            "responses": [
-                "Nuestros horarios de atención son de lunes a viernes de 9am a 6pm, y los sábados de 9am a 2pm. Estamos cerrados los domingos."
-            ]
-        },
-        {
-            "tag": "ubicacion11",
-            "patterns": [
-                "Dónde están ubicados?",
-                "Cómo llegar a su tienda?",
-                "Tienen dirección?"
-            ],
-            "responses": [
-                "Nuestra tienda se encuentra en tal dirección, estamos disponible para indicarle como llegar desde su ubicación actual"
-            ]
-        },
-        {
-            "tag": "atencion12",
-            "patterns": [
-                "Cómo puedo contactarlos?",
-                "Tienen teléfono?",
-                "Tienen servicio al cliente?"
-            ],
-            "responses": [
-                "Sí, tenemos servicio al cliente disponible a través de nuestro número de teléfono 123-456-7890 y también puede contactarnos a través de nuestro correo electrónico info@tienda.com."
-            ]
-        },
-        {
-            "tag": "surtido13",
-            "patterns": [
-                "Tienen una gran variedad de ropa?",
-                "Tienen un surtido amplio?",
-                "Tienen una gran selección?"
-            ],
-            "responses": [
-                "Sí, tenemos una gran variedad de ropa para todas las edades y gustos, estamos seguros de que encontrará algo que le guste."
-            ]
-        },
-        {
-            "tag": "personalizacion14",
-            "patterns": [
-                "Ofrecen ropa personalizada?",
-                "Puedo personalizar mi ropa?",
-                "Ofrecen servicios de bordado?"
-            ],
-            "responses": [
-                "Sí, ofrecemos servicios de personalización, como bordado y estampado. Por favor contáctanos para obtener más información sobre estos servicios."
-            ]
-        },
-        {
-            "tag": "saludo1",
-            "patterns": [
-                "Hola",
-                "Buenos días",
-                "Buenas tardes"
-            ],
-            "responses": [
-                "Hola, ¿en qué puedo ayudarte hoy?",
-                "Buenos días, ¿cómo puedo ayudarte?",
-                "Buenas tardes, ¿en qué puedo ayudarte?"
-            ]
-        },
-        {
-            "tag": "presentacion2",
-            "patterns": [
-                "¿Quién es usted?",
-                "¿Cómo se llama?",
-                "¿Puede presentarse?"
-            ],
-            "responses": [
-                "Soy un asistente virtual de ventas de ropa, ¿en qué puedo ayudarte?",
-                "Mi nombre es Karen, ¿cómo puedo ayudarte?",
-                "Soy un representante de ventas, ¿en qué puedo ayudarte?"
-            ]
-        },
-        {
-            "tag": "ayuda3",
-            "patterns": [
-                "Necesito ayuda",
-                "No entiendo",
-                "No sé cómo hacerlo"
-            ],
-            "responses": [
-                "Claro, ¿en qué puedo ayudarte?",
-                "¿En qué necesitas ayuda?",
-                "Estoy aquí para ayudarte, ¿en qué puedo ayudarte?"
-            ]
-        },
-        {
-            "tag": "informacion4",
-            "patterns": [
-                "Necesito más información",
-                "Quiero saber más",
-                "¿Puede darme más detalles?"
-            ],
-            "responses": [
-                "Claro, ¿sobre qué necesitas más información?",
-                "¿En qué puedo ayudarte con información adicional?",
-                "Estoy aquí para proporcionarte toda la información que necesites, ¿sobre qué estas interesado?"
-            ]
-        },
-        {
-            "tag": "dudas5",
-            "patterns": [
-                "Tengo dudas",
-                "No estoy seguro",
-                "No estoy convencido"
-            ],
-            "responses": [
-                "Entiendo, ¿en qué puedo ayudarte a aclarar tus dudas?",
-                "¿Qué dudas tienes? Estoy aquí para ayudarte.",
-                "Claro, ¿Qué es lo que te hace tener dudas? estaré encantado de ayudarte a aclararlas."
-            ]
-        },
-        {
-            "tag": "bienvenida6",
-            "patterns": [
-                "Buenas",
-                "Que tal",
-                "Hola"
-            ],
-            "responses": [
-                "¿en qué puedo ayudarte?",
-                "Estoy contento de poder ayudarte, ¿en qué necesitas ayuda?",
-                "¡Hola! ¿En qué puedo ayudarte hoy?"
-            ]
-        },
-        {
-            "tag": "interes7",
-            "patterns": [
-                "Estoy interesado",
-                "Me gustaría saber más",
-                "Me interesa"
-            ],
-            "responses": [
-                "¡Genial! ¿En qué producto o servicio estás interesado?",
-                "Estoy emocionado de poder ayudarte, ¿puedes proporcionarme más detalles sobre tu interés?",
-                "Me alegro de saber que estás interesado, ¿en qué puedo ayudarte?"
-            ]
-        },
-        {
-            "tag": "busqueda8",
-            "patterns": [
-                "Estoy buscando",
-                "Quiero comprar",
-                "Necesito"
-            ],
-            "responses": [
-                "¡Entiendo! ¿Qué estás buscando comprar?",
-                "¡Claro! ¿En qué puedo ayudarte a encontrar lo que necesitas?",
-                "¡Perfecto! ¿Qué es lo que necesitas comprar?"
-            ]
-        },
-        {
-            "tag": "opciones9",
-            "patterns": [
-                "¿Qué opciones tienen?",
-                "¿Qué puedo elegir?",
-                "¿Qué me recomiendas?"
-            ],
-            "responses": [
-                "Tenemos una gran variedad de opciones disponibles, ¿enqué categoria estas interesado? estaré encantado de mostrarte nuestras opciones disponibles.",
-                "Tenemos una amplia selección de productos, ¿en qué estas interesado? estaré feliz de mostrarte las opciones que tenemos.",
-                "Tenemos varias opciones disponibles, ¿en qué categoría estás interesado? Estaré encantado de recomendarte algunas opciones."
-            ]
-        },
-        {
-            "tag": "metodosEnvioDomicilio",
-            "patterns": [
-                "Cómo puedo recibir mi pedido?",
-                "Cómo hago para que me lo envíen a mi casa?",
-                "Qué opciones de envío a domicilio tienen?",
-                "Cuáles son los costos de envío a mi dirección?"
-            ],
-            "responses": [
-                "Ofrecemos envío a domicilio a través de diferentes servicios de paquetería, con precios y tiempos de entrega variados dependiendo de su ubicación. Por favor proporcione su dirección para brindarle una cotización precisa",
-                "Podemos enviar su pedido directamente a su dirección de envío. Los costos de envío pueden variar según su ubicación y el servicio de paquetería que elija. ¿Podría proporcionarme su dirección para brindarle una cotización precisa?",
-                "Ofrecemos envíos a domicilio a través de diferentes servicios de paquetería con precios y tiempos de entrega variados dependiendo de su ubicación, ¿podría proporcionarme su dirección para brindarle una cotización precisa?"
-            ]
-        },
-        {
-            "tag": "comprarRopa",
-            "patterns": [
-                "Cómo puedo comprar ropa?",
-                "Cómo hago un pedido?",
-                "Cómo se hacen las compras?",
-                "Puedo comprar en línea?"
-            ],
-            "responses": [
-                "Sí, puede comprar en línea a través de nuestra página web o tienda en línea. Puede seleccionar los productos que desea, agregarlos al carrito de compras y seguir las instrucciones para completar la compra. También puede visitar nuestra tienda física para hacer una compra en persona",
-                "Ofrecemos varias opciones para comprar ropa, incluyendo nuestra tienda en línea o visitando nuestra tienda física. Puede navegar por nuestros productos, seleccionar los que desee y seguir las instrucciones para completar su compra. ¿En qué le podemos ayudar?",
-                "Puede comprar ropa en nuestra tienda en línea o visitando nuestra tienda física. En ambos casos, puede seleccionar los productos que desee, agregarlos al carrito de compras y seguir las instrucciones para completar la compra. Si tiene alguna pregunta durante el proceso, no dude en contactarnos para ayudarle."
-            ]
-        },
-        {
-            "tag": "consultarRopa",
-            "patterns": [
-                "Cómo puedo ver los productos?",
-                "Dónde puedo ver la ropa?",
-                "Cómo navegar por los productos?",
-                "Dónde está la sección de ropa?"
-            ],
-            "responses": [
-                "Puede ver nuestros productos en línea a través de nuestra página web o tienda en línea. Tenemos una sección de ropa donde puede navegar por diferentes categorías y al dar click vera a detalle la prenda y el precio respectivo. También puede visitar nuestra tienda física para ver los productos en persona",
-                "Puede encontrar nuestros productos en línea en nuestra tienda en línea o visitando nuestra tienda física. En ambos casos, puede navegar por diferentes categorías de ropa y filtrar por talla, color y precio. ¿En qué le podemos ayudar?",
-                "Nuestros productos están disponibles en línea en nuestra tienda en línea o en nuestra tienda física. Puede navegar por diferentes categorías de ropa, como camisetas, pantalones, vestidos, etc. Si tiene alguna pregunta, no dude en contactarnos."
-            ]
-        },
-        {
-            "tag": "usarPaginaWebRopa",
-            "patterns": [
-                "Cómo usar la página web?",
-                "Cómo navegar por la tienda en línea?",
-                "Cómo buscar productos?",
-                "Cómo hacer un pedido en línea?"
-            ],
-            "responses": [
-                "La navegación en nuestra página web es sencilla e intuitiva. Puede utilizar el menú de categorías para encontrar los productos que está buscando, utilizar el buscador para buscar productos específicos o navegar por las promociones en la página de inicio. Para hacer un pedido, agregue los productos deseados al carrito de compras y siga las instrucciones para completar la compra.",
-                "Nuestra tienda en línea está diseñada para ser fácil de usar. Puede navegar por las diferentes categorías de ropa en el menú, utilizar el buscador para encontrar productos específicos o ver las promociones en la página de inicio. Una vez que haya encontrado el producto que desea, agregarlo al carrito y seguir las instrucciones para completar la compra.",
-                "La página web está diseñada para ser fácil de usar. Puede navegar por las diferentes categorías de ropa, utilizar el buscador para encontrar productos específicos o ver las promociones en la página de inicio. Una vez que haya encontrado el producto deseado, agregarlo al carrito de compra y seguir las instrucciones para completar la compra. Si tiene alguna pregunta, no dude en contactarnos."
-            ]
-        },
-        {
-            "tag": "pagarConPaypal",
-            "patterns": [
-                "Cómo pagar con PayPal?",
-                "Cómo usar PayPal en la compra?",
-                "Cómo agregar PayPal como forma de pago?",
-                "Cómo se hace un pago con PayPal?"
-            ],
-            "responses": [
-                "Para pagar con PayPal, simplemente seleccione PayPal como forma de pago en el proceso de compra. Será redirigido a la página de PayPal donde podrá iniciar sesión en su cuenta y confirmar el pago. Una vez confirmado, regresará a nuestra página para completar la compra.",
-                "PayPal es una opción de pago válida en nuestra tienda en línea. Durante el proceso de compra, simplemente seleccione PayPal como forma de pago y siga las instrucciones para iniciar sesión en su cuenta de PayPal y confirmar el pago. Una vez confirmado, regresará a nuestra página para completar la compra.",
-                "Puede seleccionar PayPal como forma de pago durante el proceso de compra en nuestra tienda en línea. Será redirigido a la página de PayPal donde podrá iniciar sesión en su cuenta y confirmar el pago. Una vez confirmado, regresará a nuestra página para completar la compra."
-            ]
-        },
-        {
-            "tag": "otrosMetodosPago",
-            "patterns": [
-                "¿Aceptan otros métodos de pago?",
-                "¿Tienen opciones adicionales de pago?",
-                "¿Qué métodos de pago adicionales aceptan?",
-                "¿Tienen tarjeta de crédito o débito como opción de pago?"
-            ],
-            "responses": [
-                "Actualmente solo ofrecemos PayPal como opción de pago. Nos disculpamos por cualquier inconveniente esto pueda causar.",
-                "Lo sentimos, solo aceptamos PayPal como forma de pago en este momento.",
-                "Actualmente solo ofrecemos PayPal como opción de pago, lo sentimos si esto causa algún inconveniente.",
-                "Actualmente solo aceptamos PayPal como forma de pago, disculpe las molestias."
-            ]
-        },
-        {
-            "tag": "catalogoProductos",
-            "patterns": [
-                "¿Tienen un catálogo de productos?",
-                "¿Dónde puedo ver todos los productos?",
-                "¿Puedo ver un listado de todos los productos?",
-                "¿Tienen una lista de todos los productos disponibles?"
-            ],
-            "responses": [
-                "Sí, tenemos un catálogo de productos en línea en nuestra página web donde puede navegar por diferentes categorías y ver todos nuestros productos disponibles.",
-                "Puede ver todos nuestros productos disponibles en línea en nuestra página web, en la sección de productos.",
-                "Sí, tenemos un catálogo completo de productos en línea en nuestra página web donde puede ver todos los productos disponibles y filtrarlos por categoría.",
-                "Sí, tenemos una lista completa de todos los productos disponibles en línea en nuestra página web, en la sección de productos."
-            ]
-        },
-        {
-            "tag": "otrosModelosRopa",
-            "patterns": [
-                "¿Tienen otros modelos de este producto?",
-                "¿Tienen esta prenda en otro color?",
-                "¿Tienen esta prenda en otra talla?",
-                "¿Tienen más opciones de este tipo de ropa?"
-            ],
-            "responses": [
-                "Sí, tenemos otros modelos y opciones disponibles de este producto. Por favor visite nuestra página web o tienda física para ver nuestra selección completa.",
-                "Sí, tenemos otros colores y tallas disponibles para este producto. Por favor visite nuestra página web o tienda física para ver todas las opciones.",
-                "Sí, tenemos otras opciones y modelos disponibles de este tipo de ropa. Por favor visite nuestra página web o tienda física para ver nuestra selección completa.",
-                "Sí, tenemos más opciones de este tipo de ropa disponibles. Por favor visite nuestra página web o tienda física para ver todas las opciones disponibles."
-            ]
-        },
-        {
-            "tag": "otrosColoresRopa",
-            "patterns": [
-                "¿Tienen este producto en otros colores?",
-                "¿Tienen esta prenda en otro color?",
-                "¿Hay más opciones de color para este producto?",
-                "¿Qué otros colores tienen disponibles para este producto?"
-            ],
-            "responses": [
-                "Sí, tenemos este producto disponible en otros colores. Por favor visite nuestra página web o tienda física para ver todas las opciones de color.",
-                "Sí, tenemos esta prenda disponible en varios colores. Por favor visite nuestra página web o tienda física para ver todas las opciones.",
-                "Sí, tenemos más opciones de color para este producto. Por favor visite nuestra página web o tienda física para ver todas las opciones disponibles.",
-                "Actualmente ofrecemos este producto en varios colores, por favor visite nuestra página web o tienda física para ver todas las opciones disponibles."
-            ]
-        },
-        {
-            "tag": "materialRopa",
-            "patterns": [
-                "¿De qué está hecho este producto?",
-                "¿Qué tipo de tela es esta prenda?",
-                "¿Es esta ropa hecha de algodón?",
-                "¿Qué material se utilizó para hacer esta ropa?"
-            ],
-            "responses": [
-                "Este producto está hecho de lana. Es suave al tacto y cálido.",
-                "Esta prenda está hecha de lana, es resistente y cálida al tacto.",
-                "No, esta ropa no está hecha de algodón, esta hecha de lana.",
-                "Este producto está hecho de lana, es suave y cálida al tacto, ideales para temperaturas frías."
-            ]
-        },
-        {
-            "tag": "materialRopa2",
-            "patterns": [
-                "¿De qué está fabricada esta ropa?",
-                "¿Qué tipo de fibras se utilizaron para hacer esta prenda?",
-                "¿Es esta ropa hecha de algún material sintético?",
-                "¿Qué tipo de telas se utilizaron para hacer esta ropa?"
-            ],
-            "responses": [
-                "Esta ropa está fabricada con lana, es suave al tacto y cálida.",
-                "En esta prenda se utilizaron fibras de lana para su fabricación, es resistente y cálida al tacto.",
-                "No, esta ropa no está hecha de materiales sintéticos, esta hecha de lana.",
-                "Esta ropa está hecha con telas de lana, es suave y cálida al tacto, ideales para temperaturas frías."
-            ]
-        },
-        {
-            "tag": "tipoRopa",
-            "patterns": [
-                "¿Qué tipo de ropa venden?",
-                "¿Qué especialidad tienen en su tienda?",
-                "¿Qué tipo de prendas ofrecen?",
-                "¿Qué productos se pueden encontrar en su tienda?"
-            ],
-            "responses": [
-                "Vendemos ropa crochet hecha con lana, son suaves, cálidas y con diseños únicos.",
-                "Nuestra especialidad son las prendas de ropa crochet hechas con lana, son suaves, cálidas y con diseños únicos.",
-                "Ofrecemos ropa crochet hecha con lana, son suaves, cálidas y con diseños únicos.",
-                "En nuestra tienda encontrará prendas de ropa crochet hechas con lana, son suaves, cálidas y con diseños únicos."
-            ]
-        },
-        {
-            "tag": "tipoRopa2",
-            "patterns": [
-                "¿Qué clase de ropa tienen en su tienda?",
-                "¿Qué productos especiales ofrecen?",
-                "¿Qué ropa se puede encontrar en su tienda?",
-                "¿Qué tipo de prendas tienen disponibles?"
-            ],
-            "responses": [
-                "En nuestra tienda ofrecemos ropa hecha a mano con crochet y lana, son suaves, cálidas y con diseños únicos.",
-                "Nuestros productos especiales son prendas de ropa hechas a mano con crochet y lana, son suaves, cálidas y con diseños únicos.",
-                "En nuestra tienda encontrará ropa hecha a mano con crochet y lana, son suaves, cálidas y con diseños únicos.",
-                "Actualmente tenemos prendas de ropa hechas a mano con crochet y lana, son suaves, cálidas y con diseños únicos."
-            ]
-        },
-        {
-            "tag": "calidadRopa",
-            "patterns": [
-                "¿Qué calidad tienen sus productos?",
-                "¿Son prendas de alta calidad?",
-                "¿Cómo describiría la calidad de su ropa?",
-                "¿La ropa es duradera?"
-            ],
-            "responses": [
-                "Nuestros productos son de alta calidad, utilizamos los mejores materiales y técnicas para garantizar la durabilidad y comodidad de nuestras prendas.",
-                "Sí, ofrecemos prendas de alta calidad, con telas y materiales de primera calidad.",
-                "La calidad de nuestra ropa es excepcional, utilizamos los mejores materiales y técnicas para garantizar la durabilidad y comodidad de nuestras prendas.",
-                "Sí, nuestras prendas son duraderas y confortables, ya que utilizamos materiales de alta calidad."
-            ]
-        },
+        },        
         {
-            "tag": "preciosRopa",
+
+            "tag": "nombre",
+            "patterns": [
+                "¿Cómo te llamas?",
+                "¿Cuál es tu nombre?",
+                "¿Quién eres?",
+                "¿Cómo te denominas?",
+                "¿Podrías decirme tu nombre?",
+                "¿Cuál es tu apodo?",
+                "¿Cómo debería llamarte?",
+                "¿Podrías presentarte?",
+                "¿Podrías decirme quién eres?",
+                "¿Cómo te conocen?"
+            ],
+            "responses": [
+                "Mi nombre es KAREN. Soy un chatbot diseñado para ayudarte en lo que necesites.",
+                "Me llamo KAREN. Soy un asistente virtual creado para ayudarte en lo que necesites.",
+                "Puedes llamarme KAREN, un chatbot diseñado para brindarte información y asistencia.",
+                "Soy KAREN, un bot de inteligencia artificial creado para ayudarte en lo que necesites.",
+                "Mi nombre es KAREN y estoy aquí para ayudarte. ¿En qué puedo ayudarte hoy?",
+                "Soy KAREN, un bot diseñado para ayudarte. ¿En qué puedo ayudarte hoy?",
+                "Puedes llamarme KAREN. ¿En qué puedo ayudarte hoy?",
+                "Soy KAREN, un chatbot creado para brindarte información y asistencia. ¿En qué puedo ayudarte hoy?",
+                "Me llaman KAREN, un asistente virtual diseñado para ayudarte. ¿En qué puedo ayudarte hoy?",
+                "Mi nombre es KAREN. ¿En qué puedo ayudarte hoy?"
+            ]
+        },
+        {
+            "tag": "Cuidado de la ropa",
+            "patterns": [
+                "¿Cómo puedo cuidar mi ropa?",
+                "¿Qué cuidados necesita mi ropa?",
+                "¿Cómo debo lavar mi ropa?"
+            ],
+            "responses": [
+                "Recomendamos leer las etiquetas de cuidado de cada prenda antes de lavarla. En general, se recomienda lavar a mano o en lavadora con agua fría y secar al aire libre o en secadora a baja temperatura.",
+                "Es importante evitar el uso de lejía o planchar la ropa a altas temperaturas para evitar dañar las fibras.",
+                "Si tiene alguna pregunta específica sobre el cuidado de una prenda, no dude en ponerse en contacto con nosotros para obtener más información."
+            ]
+        },
+        {
+            "tag": "Cuidado de la ropa",
+            "patterns": [
+                "¿Cómo puedo cuidar mi ropa?",
+                "¿Qué cuidados necesita mi ropa?",
+                "¿Cómo debo lavar mi ropa?"
+            ],
+            "responses": [
+                "Recomendamos leer las etiquetas de cuidado de cada prenda antes de lavarla. En general, se recomienda lavar a mano o en lavadora con agua fría y secar al aire libre o en secadora a baja temperatura.",
+                "Es importante evitar el uso de lejía o planchar la ropa a altas temperaturas para evitar dañar las fibras.",
+                "Si tiene alguna pregunta específica sobre el cuidado de una prenda, no dude en ponerse en contacto con nosotros para obtener más información."
+            ]
+        },
+        {
+            "tag": "Combinación de ropa",
+            "patterns": [
+                "¿Cómo puedo combinar mi ropa?",
+                "¿Qué colores combinan bien?",
+                "¿Qué ropa puedo usar con estos pantalones?",
+                "¿Cómo puedo hacer que mi ropa se vea bien juntos?"
+            ],
+            "responses": [
+                "Recomendamos experimentar con diferentes combinaciones de ropa para encontrar su propio estilo único. En general, se pueden combinar colores opuestos en la rueda de colores o elegir un color predominante y combinarlo con tonos más claros o más oscuros.",
+                "Para combinar pantalones, recomendamos elegir una camisa que contraste ",
+                "Para combinar pantalones, recomendamos elegir una camisa que contraste ",
+                "Para combinar pantalones, recomendamos elegir una camisa que contraste "
+            ]
+        },
+        {
+            "tag": "productos",
+            "patterns": [
+                "¿Qué tipo de ropa a crochet ofrecen?",
+                "¿Cuáles son sus productos?",
+                "¿Qué tienen de venta?",
+                "¿Qué artículos de ropa tienen disponibles?",
+                "¿Qué prendas a crochet venden?",
+                "¿Qué puedo comprar en su tienda de ropa a crochet?",
+                "¿Qué productos de vestir venden?",
+                "¿Cuál es su selección de ropa a crochet?",
+                "¿Tienen ropa a crochet de temporada?",
+                "¿Tienen ropa a crochet para todas las edades?"
+            ],
+            "responses": [
+                "Ofrecemos una gran variedad de ropa a crochet, como suéteres, chaquetas, chalecos, blusas, vestidos, pantalones, gorros, bufandas, accesorios y más.",
+                "En nuestra tienda encontrarás una amplia selección de ropa a crochet para todas las edades y estilos, incluyendo suéteres, chalecos, blusas, vestidos, pantalones, gorros, bufandas, accesorios y más.",
+                "Tenemos una amplia selección de ropa a crochet, incluyendo suéteres, chaquetas, chalecos, blusas, vestidos, pantalones, gorros, bufandas, accesorios y más. ¡Ven a explorar nuestra tienda en línea o visítanos en persona!",
+                "Tenemos una amplia selección de ropa a crochet, incluyendo suéteres, chaquetas, chalecos, blusas, vestidos, pantalones, gorros, bufandas, accesorios y más. ¡Ven a explorar nuestra tienda en línea o visítanos en persona!",
+                "Tenemos una amplia selección de ropa a crochet, incluyendo suéteres, chaquetas, chalecos, blusas, vestidos, pantalones, gorros, bufandas, accesorios y más. ¡Ven a explorar nuestra tienda en línea o visítanos en persona!",            
+                "Tenemos una amplia selección de ropa a crochet, incluyendo suéteres, chaquetas, chalecos, blusas, vestidos, pantalones, gorros, bufandas, accesorios y más. ¡Ven a explorar nuestra tienda en línea o visítanos en persona!",            
+                "Tenemos una amplia selección de ropa a crochet, incluyendo suéteres, chaquetas, chalecos, blusas, vestidos, pantalones, gorros, bufandas, accesorios y más. ¡Ven a explorar nuestra tienda en línea o visítanos en persona!",            
+                "Tenemos una amplia selección de ropa a crochet, incluyendo suéteres, chaquetas, chalecos, blusas, vestidos, pantalones, gorros, bufandas, accesorios y más. ¡Ven a explorar nuestra tienda en línea o visítanos en persona!",            
+                "Tenemos una amplia selección de ropa a crochet, incluyendo suéteres, chaquetas, chalecos, blusas, vestidos, pantalones, gorros, bufandas, accesorios y más. ¡Ven a explorar nuestra tienda en línea o visítanos en persona!",            
+                "Tenemos una amplia selección de ropa a crochet, incluyendo suéteres, chaquetas, chalecos, blusas, vestidos, pantalones, gorros, bufandas, accesorios y más. ¡Ven a explorar nuestra tienda en línea o visítanos en persona!"                     
+                ]
+            },
+        {
+            "tag": "colores",
             "patterns": [
-                "¿Cuáles son los precios de sus productos?",
-                "¿Sus prendas son caras?",
-                "¿Hay algún tipo de descuento en sus precios?",
-                "¿Cómo compararías los precios de su ropa con otras tiendas?"
+                "¿Tienen un color en particular?",
+                "¿Tienen mi color favorito?",
+                "¿Qué colores tienen disponibles?",
+                "¿Qué tonalidades tienen de ropa a crochet?",
+                "¿Tienen colores neutros en ropa a crochet?",
+                "¿Cuáles son los colores más populares en ropa a crochet?",
+                "¿Tienen ropa a crochet de colores brillantes?",
+                "¿Tienen ropa a crochet con tonalidades pastel?",
+                "¿Tienen ropa a crochet con tonalidades vibrantes?",
+                "¿Puedo hacer un pedido de ropa a crochet en un color personalizado?"
             ],
             "responses": [
-                "Nuestros precios son competitivos en comparación con otras tiendas del mercado, tenemos opciones para diferentes presupuestos.",
-                "No, nuestros precios son accesibles y competitivos con otras tiendas del mercado.",
-                "Ofrecemos promociones y descuentos en diferentes productos y temporadas, por favor visite nuestra página web o tienda física para obtener más información.",
-                "Nuestros precios son competitivos en comparación con otras tiendas del mercado, ofrecemos una gran variedad de productos y opciones para diferentes presupuestos."
+                "Tenemos una gran variedad de colores disponibles en ropa a crochet, desde tonalidades neutras hasta tonalidades brillantes y vibrantes. Por favor contáctanos para verificar si tenemos el color que necesita.",
+                "Ofrecemos una amplia selección de tonalidades en ropa a crochet, desde tonos pastel hasta tonalidades brillantes y vibrantes. ¡Explora nuestra tienda para ver todas las opciones!",
+                "En nuestra tienda encontrarás una amplia selección de colores en ropa a crochet, desde tonalidades neutras hasta tonalidades brillantes y vibrantes. Si no ves el color que buscas, contáctanos y haremos todo lo posible para ayudarte.",
+                "Ofrecemos una amplia selección de tonalidades en ropa a crochet, desde tonos pastel hasta tonalidades brillantes y vibrantes. ¡Explora nuestra tienda para ver todas las opciones!",
+                "Ofrecemos una amplia selección de tonalidades en ropa a crochet, desde tonos pastel hasta tonalidades brillantes y vibrantes. ¡Explora nuestra tienda para ver todas las opciones!",
+                "Ofrecemos una amplia selección de tonalidades en ropa a crochet, desde tonos pastel hasta tonalidades brillantes y vibrantes. ¡Explora nuestra tienda para ver todas las opciones!",
+                "Ofrecemos una amplia selección de tonalidades en ropa a crochet, desde tonos pastel hasta tonalidades brillantes y vibrantes. ¡Explora nuestra tienda para ver todas las opciones!",
+                "Ofrecemos una amplia selección de tonalidades en ropa a crochet, desde tonos pastel hasta tonalidades brillantes y vibrantes. ¡Explora nuestra tienda para ver todas las opciones!",
+                "Ofrecemos una amplia selección de tonalidades en ropa a crochet, desde tonos pastel hasta tonalidades brillantes y vibrantes. ¡Explora nuestra tienda para ver todas las opciones!",
+                "Ofrecemos una amplia selección de tonalidades en ropa a crochet, desde tonos pastel hasta tonalidades brillantes y vibrantes. ¡Explora nuestra tienda para ver todas las opciones!"
+
             ]
         },
         {
-            "tag": "servicioCliente",
+            "tag": "tallas",
             "patterns": [
-                "¿Cómo puedo contactar con el servicio al cliente?",
-                "¿Quién puedo hablar para resolver un problema?",
-                "¿Cuál es el procedimiento para devolver un producto?",
-                "¿Cómo puedo hacer una queja?"
+                "¿Qué tallas tienen disponibles?",
+                "¿Tienen mi talla?",
+                "¿En qué tallas tienen este producto?",
+                "¿Puedo encontrar ropa de talla grande?",
+                "¿Tienen tallas para niños?",
+                "¿Tienen tallas para bebés?",
+                "¿Cuáles son las medidas para cada talla?",
+                "¿Cómo puedo saber mi talla?",
+                "¿Tienen ropa para personas muy altas o muy bajas?",
+                "¿Tienen tallas para personas con sobrepeso?"
             ],
             "responses": [
-                "Puede contactar con nuestro servicio al cliente a través de nuestro número telefónico, correo electrónico o a través de nuestra página web.",
-                "Por favor, póngase en contacto con nuestro servicio al cliente para resolver cualquier problema que tenga.",
-                "Por favor, siga las instrucciones en nuestra política de devoluciones en nuestra página web o póngase en contacto con nuestro servicio al cliente para obtener más información sobre cómo devolver un producto.",
-                "Por favor, póngase en contacto con nuestro servicio al cliente para hacer cualquier tipo de queja. Las redes se encuentran en la parte inferior de la pagina."
+                "Tenemos una amplia variedad de tallas, desde la XS hasta la XXL. Por favor, contáctenos si necesita ayuda para encontrar su talla.",
+                "Sí, tenemos una gran variedad de tallas disponibles. Por favor, contáctenos para verificar si tenemos la talla que necesita.",
+                "Este producto está disponible en tallas desde la XS hasta la XXL.",
+                "Sí, tenemos ropa en tallas grandes para mujeres y hombres.",
+                "Sí, también tenemos ropa para niños en diferentes tallas.",
+                "Sí, también tenemos ropa para bebés en diferentes tallas.",
+                "Puede encontrar las medidas detalladas de cada talla en nuestra página web o tienda en línea.",
+                "Para encontrar su talla, puede consultar nuestra guía de tallas en la página del producto o contáctenos para obtener asesoramiento.",
+                "Sí, también tenemos tallas para personas altas y bajas. Por favor, contáctenos para más información.",
+                "Sí, también tenemos tallas para personas con sobrepeso. Por favor, contáctenos para más información."
             ]
         },
         {
-            "tag": "servicioCliente0",
+            "tag": "material",
             "patterns": [
-                "¿Qué puedo hacer si tengo algún problema con mi pedido?"
+              "¿De qué material están hechas?",
+              "¿Qué tipo de hilo utilizan?",
+              "¿Puedes hacerlas con otro material?"
             ],
             "responses": [
-                "Le pedimos que por favor se ponga en contacto con nuestro servicio al cliente si tiene algún problema con su pedido. Podemos ayudarlo con cualquier pregunta o problema que tenga con su pedido, incluyendo cambios, devoluciones y reembolsos."
+              "Utilizamos hilo de algodón de alta calidad para nuestras prendas. Si desea una prenda con otro material, por favor contáctenos para ver si es posible.",
+              "Nuestras prendas están hechas con hilo de algodón mercerizado, lo que les da un brillo y suavidad especiales.",
+              "Podemos hacer prendas de crochet con otros materiales, como lana o hilo acrílico. Por favor contáctenos para ver si es posible y para obtener un presupuesto."
             ]
-        },
-        {
-            "tag": "servicioCliente1",
-            "patterns": [
-                "¿Cómo puedo rastrear mi pedido?"
-            ],
-            "responses": [
-                "Usted puede rastrear su pedido ingresando a su cuenta en nuestra tienda online o póngase en contacto con nuestro servicio al cliente para obtener información actualizada sobre el estado de su pedido y la fecha de entrega."
-            ]
-        },
-        {
-            "tag": "servicioCliente2",
+          },
+          {
+            "tag": "tiempo-produccion",
             "patterns": [
-                "¿Qué hago si recibí un producto dañado o defectuoso?"
+              "¿Cuánto tiempo toma hacer una prenda?",
+              "¿Cuánto tiempo tarda en entregarse una prenda?",
+              "¿Cuál es el tiempo de producción?"
             ],
             "responses": [
-                "Lamentamos que haya recibido un producto dañado o defectuoso. Por favor contáctenos lo antes posible y haremos lo necesario para solucionar el problema y procesar un reemplazo o devolución."
+              "El tiempo de producción depende del tipo de prenda y del tamaño. Por lo general, toma de 2 a 3 semanas. Por favor contáctenos para obtener una estimación más precisa.",
+              "El tiempo de entrega varía según el lugar de envío. En promedio, toma de 1 a 2 semanas después de la finalización de la prenda. ",
+              "El tiempo de producción puede variar según la complejidad de la prenda y la cantidad de pedidos que tengamos. Si necesita una prenda en particular para una fecha determinada, por favor contáctenos con anticipación."
             ]
-        },
-        {
-            "tag": "servicioCliente3",
+          },
+          {
+            "tag": "garantia",
             "patterns": [
-                "¿Cómo puedo cambiar mi dirección de envío?"
+              "¿Ofrecen garantía en sus productos?",
+              "¿Qué pasa si la prenda no se ajusta correctamente?",
+              "¿Qué sucede si la prenda se daña después de su compra?"
             ],
             "responses": [
-                "Por favor contáctenos si necesita cambiar su dirección de envío. Haremos lo posible para actualizar su información antes de que su pedido sea enviado."
+              "Ofrecemos una garantía de satisfacción del 100% en todos nuestros productos. Si no está satisfecho con su compra, contáctenos para obtener una solución.",
+              "Si la prenda no se ajusta correctamente, podemos hacerle ajustes o reemplazarla si es necesario. Por favor contáctenos para obtener más información.",
+              "Si la prenda se daña después de su compra, contáctenos para ver si es posible repararla o reemplazarla. Por favor, tenga en cuenta que las prendas dañadas por mal uso no están cubiertas por la garantía."
             ]
-        },
-        {
-            "tag": "servicioCliente4",
+          },
+          {
+            "tag": "envio",
             "patterns": [
-                "¿Cómo puedo obtener un reembolso?"
+              "¿Cuál es el costo de envío?",
+              "¿Hacen envíos internacionales?",
+              "¿Cuánto tiempo toma el envío?"
             ],
             "responses": [
-                "Por favor siga las instrucciones en nuestra política de devoluciones y reembolsos en nuestra página web o póngase en contacto con nuestro servicio al cliente para obtener más información sobre cómo procesar un reembolso."
+              "El costo de envío varía según el lugar de destino y el tamaño del paquete. Por favor contáctenos para obtener más información.",
+              "Sí, hacemos envíos internacionales. Por favor contáctenos para obtener más información sobre los costos y plazos de envío.",
+              "El tiempo de envío varía según el lugar de destino y el tipo de envío seleccionado. Por lo general, toma de 1 a 2 semanas."
             ]
         },
         {
-            "tag": "servicioCliente5",
+            "tag": "ocasion",
             "patterns": [
-                "¿Ofrecen garantía en sus productos?"
+              "Son apropiadas para una ocasión especial?",
+              "Podría usarla para un evento formal?",
+              "Estas prendas son para uso diario o para ocasiones especiales?"
             ],
             "responses": [
-                "Sí, ofrecemos garantía en nuestros productos de acuerdo a lo establecido en nuestra política de garantía. Por favor visite nuestra página web o póngase en contacto con nuestro servicio al cliente para obtener más información."
+              "Nuestras prendas son muy versátiles y pueden ser utilizadas para una variedad de ocasiones, desde eventos formales hasta uso diario.",
+              "Sí, nuestras prendas son perfectas para ocasiones especiales. Tenemos una variedad de estilos y colores que se adaptan a cualquier evento.",
+              "Nuestras prendas son adecuadas tanto para uso diario como para ocasiones especiales. Depende del estilo y color que elija."
             ]
-        },
-        {
-            "tag": "servicioCliente6",
+          },
+          {
+            "tag": "comisiones",
             "patterns": [
-                "¿Cómo puedo contactar con el servicio al cliente?"
+              "Aceptan encargos personalizados?",
+              "Pueden hacer una prenda de mi diseño personalizado?",
+              "Cómo puedo solicitar una prenda personalizada?"
             ],
             "responses": [
-                "Puede contactar con nuestro servicio al cliente a través de nuestro número telefónico, correo electrónico o a través de nuestra página web. Estaremos encantados de ayudarle con cualquier pregunta o problema que tenga."
+              "Sí, aceptamos encargos personalizados. Contáctenos para discutir los detalles de su pedido.",
+              "Por supuesto, podemos hacer una prenda personalizada para usted. Por favor, envíenos su diseño y discutiremos los detalles.",
+              "Puede solicitar una prenda personalizada enviándonos un mensaje con los detalles de su diseño. Le proporcionaremos un presupuesto y un tiempo estimado de entrega."
             ]
-        },
-        {
-            "tag": "servicioCliente7",
+          },
+          {
+            "tag": "cuidado",
             "patterns": [
-                "¿Qué hago si mi pedido no llega a tiempo?"
+              "Cómo debo cuidar mis prendas de crochet?",
+              "Puedo lavarlas en la lavadora?",
+              "Requieren cuidados especiales?"
             ],
             "responses": [
-                "Lamentamos si su pedido no llega a tiempo. Por favor contáctenos y haremos lo posible para solucionar el problema y proporcionarle una solución satisfactoria."
+              "Recomendamos lavar las prendas a mano con agua fría y secarlas en plano. No utilice secadora ni plancha.",
+              "No recomendamos lavar las prendas en la lavadora, ya que pueden dañarse. Lave a mano con agua fría y secar en plano.",
+              "Las prendas de crochet requieren cuidados especiales para mantener su forma y calidad. Recomendamos lavar a mano con agua fría y secar en plano. No utilice secadora ni plancha."
             ]
-        },
-        {
-            "tag": "servicioCliente8",
+          },
+          {
+            "tag": "tiempo",
             "patterns": [
-                "¿Ofrecen atención en español?"
+                "Cuánto tiempo tardan en hacer un producto?",
+                "Cuánto tiempo se tarda en recibir el producto?",
+                "Cuánto tiempo tardan en enviar el producto?",
+                "Cuál es el tiempo de entrega?",
+                "Cuánto tarda en llegar el producto?",
+                "Pueden hacer una entrega urgente?",
+                "Tienen opciones de envío exprés?",
+                "Cuánto tiempo demora el envío internacional?",
+                "El envío es gratis?",
+                "Qué opciones de envío ofrecen?"
             ],
             "responses": [
-                "Sí, ofrecemos atención al cliente en español para ayudarlo con cualquier pregunta o problema que tenga."
+                "El tiempo de producción y envío varía dependiendo del producto y la ubicación. Por favor contáctanos para obtener una estimación más precisa.",
+                "El tiempo de entrega varía según la ubicación y el método de envío seleccionado. Por favor contáctanos para obtener una estimación más precisa.",
+                "Nos esforzamos por enviar los productos lo más rápido posible, generalmente dentro de los 3 días hábiles posteriores a la compra. El tiempo de entrega varía según la ubicación y el método de envío seleccionado. Por favor contáctanos para obtener una estimación más precisa.",
+                "El tiempo de entrega varía según la ubicación y el método de envío seleccionado. Por favor contáctanos para obtener una estimación más precisa.",
+                "El tiempo de entrega varía según la ubicación y el método de envío seleccionado. Por favor contáctanos para obtener una estimación más precisa.",
+                "Podemos ofrecer opciones de envío urgente para entregas en el mismo día o al día siguiente en algunas áreas. Por favor contáctanos para verificar la disponibilidad y los precios.",
+                "Ofrecemos opciones de envío exprés para entregas más rápidas. Por favor contáctanos para obtener más información y precios.",
+                "El tiempo de envío internacional varía según la ubicación y el método de envío seleccionado. Por favor contáctanos para obtener una estimación más precisa.",
+                "El envío es gratuito para pedidos superiores a un cierto monto. Por favor contáctanos para obtener más información.",
+                "Ofrecemos opciones de envío estándar y exprés. Por favor contáctanos para obtener más información sobre los métodos de envío y precios."
             ]
         },
         {
-            "tag": "servicioCliente9",
+            "tag": "estilos",
             "patterns": [
-                "¿Cómo puedo hacer una sugerencia o comentario?"
+                "Qué tipo de estilo manejan?",
+                "Tienen prendas para un estilo casual?",
+                "Busco ropa con estilo boho chic, qué tienen?"
             ],
             "responses": [
-                "Agradecemos sus sugerencias y comentarios. Por favor contáctenos a través de nuestro correo electrónico o a través de nuestra página web para hacer cualquier sugerencia o comentario. Tambien puede dejarnos una reseña en la seccion Reseña de la pagina web!"
+                "Manejamos una gran variedad de estilos, desde casuales hasta formales. Tenemos algunas prendas con estilo boho chic, por favor contáctanos para más información.",
+                "Todas nuestras prendas son muy versátiles y pueden ser utilizadas para una variedad de ocasiones, desde eventos formales hasta uso diario.",
+                "no creo disponer de ropa estilo boho"
             ]
         },
         {
-            "tag": "servicioCliente10",
+            "tag": "especial",
             "patterns": [
-                "¿Cómo puedo obtener información sobre su política de privacidad?"
+                "Busco un outfit para una ocasión especial, me pueden ayudar?",
+                "Qué prendas recomiendan para una cena formal?",
+                "Qué tipo de ropa es apropiada para un evento de gala?"
             ],
             "responses": [
-                "Por favor visite nuestra página web para obtener información sobre nuestra política de privacidad y cómo tratamos y protegemos su información personal."
+                "Podemos ayudarte a encontrar el outfit perfecto para cualquier ocasión especial. Para una cena formal recomendamos prendas elegantes y sofisticadas, mientras que para un evento de gala es recomendable usar trajes de noche y vestidos de gala.",
+                "te recomiendo utilizar un vestido a crochet, es muy elegante y sofisticado",
+                "blusas a crochet o vestidos a crochet son muy bonitos para una cena formal"
+
             ]
         },
         {
-            "tag": "servicioCliente11",
+            "tag": "playa",
             "patterns": [
-                "¿Cómo puedo obtener información sobre sus términos y condiciones?"
+                "Tienen ropa para usar en la playa?",
+                "Qué tipo de prendas son cómodas para la playa?",
+                "Necesito ropa fresca para un viaje a la playa, qué me recomiendan?"
             ],
             "responses": [
-                "Estos se encuentran en la parte de registro de la pagina web!"
+                "Tenemos una selección de ropa perfecta para usar en la playa, como vestidos frescos, shorts y blusas de algodón. Todo lo que necesitas para mantenerte cómoda y fresca durante tus vacaciones.",
+                "En nuestra web encontraras modelos bonitos para playa",
+                "en nuestra web existe modelos frescos para andar en la playa"
             ]
         },
         {
-            "tag": "servicioCliente12",
+            "tag": "yoga",
             "patterns": [
-                "¿Cómo puedo obtener información sobre sus promociones y descuentos?"
+                "Tienen ropa para yoga?",
+                "Qué tipo de ropa es apropiada para hacer yoga?",
+                "Necesito un outfit cómodo para practicar yoga, qué me recomiendan?"
             ],
             "responses": [
-                "Por favor siga nuestras redes sociales para obtener información sobre nuestras promociones y descuentos actuales."
+                "Tenemos una selección de ropa cómoda y elástica perfecta para practicar yoga, como leggings, tops y shorts. Todo lo que necesitas para moverte libremente y concentrarte en tu práctica.",
+                "Tenemos una selección de ropa para practicar yoga, como leggings, tops y shorts. Todo lo que necesitas para moverte libremente y concentrarte en tu práctica.",
+                "Tenemos una selección perfecta para practicar yoga, como leggings, tops y shorts. Todo lo que necesitas para moverte libremente y concentrarte en tu práctica."
+
             ]
         },
         {
-            "tag": "servicioCliente15",
+            "tag": "fitness",
             "patterns": [
-                "¿Cómo puedo obtener información sobre las tiendas físicas y puntos de venta?"
+                "Tienen ropa para hacer ejercicio?",
+                "Qué tipo de prendas son apropiadas para hacer fitness?",
+                "Busco un outfit cómodo para hacer ejercicios de alto impacto, qué me recomiendan?"
             ],
             "responses": [
-                "Estamos ubicados en guayaquil, cerca del gran Aki de la avenida amazonas. Puede obtener mas detalles por nuestras redes!"
+                "Tenemos una selección de ropa deportiva diseñada para hacer ejercicios de alta intensidad, como leggings, tops deportivos y sudaderas con capucha. Todo lo que necesitas para mantenerte cómoda y motivada durante tu entrenamiento.",
+                "Tenemos una selección de ropa para hacer fitness diseñada para hacer ejercicios de alta intensidad, como leggings, tops deportivos y sudaderas con capucha. Todo lo que necesitas para mantenerte cómoda y motivada durante tu entrenamiento.",
+                "Tenemos una selección de ropa cómoda diseñada para hacer ejercicios de alta intensidad, como leggings, tops deportivos y sudaderas con capucha. Todo lo que necesitas para mantenerte cómoda y motivada durante tu entrenamiento."
             ]
         },
         {
-            "tag": "tiempoProduccion",
+            "tag": "color",
             "patterns": [
-                "¿Cuánto tiempo se tarda en tejer una prenda de ropa?"
+                "¿Qué colores tienes?",
+                "¿Tienen este producto en otro color?",
+                "¿Hay una opción para personalizar el color?"
             ],
             "responses": [
-                "El tiempo que se tarda en tejer una prenda de ropa varía dependiendo del diseño y complejidad de la prenda. Sin embargo, en promedio, se tarda entre unas pocas horas a varios días en tejer una prenda de ropa a mano."
+                "Ofrecemos una variedad de colores para nuestros productos. Por favor, visite nuestra página de productos para ver las opciones de colores disponibles.",
+                "Podemos personalizar el color de ciertos productos para satisfacer sus necesidades. Por favor contáctanos para más información.",
+                "Nuestros productos vienen en una variedad de colores estándar. Si está buscando un color en particular, háganoslo saber y haremos todo lo posible para ayudarlo."
             ]
         },
         {
-            "tag": "lanaHipoalergenica",
+            "tag": "tamaño",
             "patterns": [
-                "¿Es la lana que utilizan hipoalergénica?"
+                "¿Qué tamaños tienes disponibles?",
+                "¿Puedo obtener este producto en otro tamaño?",
+                "¿Hay una opción para personalizar el tamaño?"
             ],
             "responses": [
-                "La lana es un material natural y no está tratada con productos químicos, por lo general es considerada hipoalergénica. Sin embargo, algunas personas pueden tener reacciones alérgicas a la lana debido a su naturaleza natural. Si usted es alérgico a la lana, le recomendamos que consulte con su médico antes de comprar nuestros productos."
+                "Ofrecemos una variedad de tamaños para nuestros productos. Por favor, visite nuestra página de productos para ver las opciones de tamaño disponibles.",
+                "Podemos personalizar el tamaño de ciertos productos para satisfacer sus necesidades. Por favor contáctanos para más información.",
+                "Nuestros productos vienen en una variedad de tamaños estándar. Si está buscando un tamaño en particular, háganoslo saber y haremos todo lo posible para ayudarlo."
             ]
         },
         {
-            "tag": "Accesorios",
+            "tag": "precio",
             "patterns": [
-                "¿Venden accesorios además de ropa?"
+                "¿Cuánto cuesta?",
+                "¿Tienes algún descuento?",
+                "¿Puedes hacer un precio especial?"
             ],
             "responses": [
-                "Sí, además de ropa, vendemos una variedad de accesorios como bufandas, gorros, guantes, etc. Por favor visite nuestra página web o tiendas físicas para obtener información sobre nuestra selección de accesorios."
+                "Nuestros precios son competitivos y varían según el producto. Por favor, visite nuestra página de productos para obtener información detallada sobre los precios.",
+                "Ofrecemos descuentos y promociones especiales de vez en cuando. Por favor, visite nuestra página de promociones o contáctanos para obtener más información.",
+                "Podemos ofrecer precios especiales en algunos casos. Por favor contáctanos para más información."
             ]
         },
         {
-            "tag": "personalizacion",
+            "tag": "devolución",
             "patterns": [
-                "¿Ofrecen servicio de personalización de ropa?",
-                "¿Puedo personalizar mi ropa?",
-                "¿Pueden hacer un diseño personalizado para mi ropa?"
+                "¿Qué pasa si quiero devolver un producto?",
+                "¿Cuál es su política de devolución?",
+                "¿Ofrecen garantía?"
             ],
             "responses": [
-                "Sí, ofrecemos servicio de personalización de ropa. Por favor contáctenos para obtener más información sobre cómo personalizar su ropa y hacer un diseño personalizado para usted."
+                "Si desea devolver un producto, por favor contáctenos para obtener más información sobre nuestra política de devolución.",
+                "Nuestra política de devolución varía según el producto. Por favor, visite nuestra página de devolución para obtener información detallada.",
+                "Sí, ofrecemos garantía para algunos productos. Por favor, visite nuestra página de garantía para obtener información detallada."
             ]
         },
         {
-            "tag": "envioInternacional",
+            "tag": "compra",
             "patterns": [
-                "¿Hacen envíos a otros países?",
-                "¿Puedo hacer un pedido desde fuera de mi país?",
-                "¿Envían a mi país?"
+                "¿Cómo puedo hacer una compra?",
+                "¿Aceptan tarjetas de crédito?",
+                "¿Puedo hacer una compra por teléfono?"
             ],
             "responses": [
-                "Lamentablemente, no ofrecemos envíos a otros países en este momento. Sólo hacemos envíos dentro de nuestro país.",
-                "Actualmente no hacemos envíos fuera de nuestro país.",
-                "Lo sentimos, no enviamos a países fuera de nuestra zona de servicio."
+                "Puede hacer una compra en línea a través de nuestro sitio web o puede visitarnos en nuestra tienda física.",
+                "Sí, aceptamos tarjetas de crédito. También aceptamos otras formas de pago, como PayPal.",
+                "Sí, puede hacer una compra por teléfono. Por favor, contáctanos para más información."
             ]
         }
     ]

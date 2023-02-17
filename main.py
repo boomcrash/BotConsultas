@@ -1,10 +1,10 @@
 #PARTE 1
 #permite el procesamiento de lenguaje natural
+import difflib
 import nltk
 #permite minimizar las palabras
-from nltk.stem.lancaster import LancasterStemmer
-#intanciamos el minimizador
-stemmer=LancasterStemmer()
+from nltk.stem import SnowballStemmer#intanciamos el minimizador
+stemmer=SnowballStemmer('spanish')
 #permite convertir casi lo que sea en arreglos
 import numpy
 #herramienta de deep learning
@@ -28,8 +28,42 @@ import dload
 import os
 dir_path = os.path.dirname(os.path.realpath(__file__))
 dir_path=dir_path.replace("\\","/")
-with open("data_bot/data.json") as file:
+with open("data_bot/data.json", 'r', encoding='utf-8') as file:
   database=json.load(file)
+
+#funcion para cambiar por sinonimos.
+import spacy
+# Cargar el modelo de lenguaje en español de spaCy
+from nltk.corpus import wordnet
+
+nltk.download('wordnet')
+
+nlp = spacy.load("es_core_news_sm")
+
+def get_synonyms(token):
+    synonyms = set()
+    for synset in wordnet.synsets(token.text, lang='spa'):
+        for lemma in synset.lemmas(lang='spa'):
+            synonyms.add(lemma.name())
+    return list(synonyms)
+
+# Registra la extensión `synonyms` en el objeto `Token`
+spacy.tokens.Token.set_extension("synonyms", getter=get_synonyms)
+
+def rephrase_sentence(sentence):
+    doc = nlp(sentence)
+    rephrased_sentence = []
+    for token in doc:
+        if token.pos_ in ["ADJ", "NOUN", "VERB"]:
+            synonyms = [syn for syn in token._.synonyms]
+            if synonyms:
+                rephrased_sentence.append(synonyms[0])
+            else:
+                rephrased_sentence.append(token.text)
+        else:
+            rephrased_sentence.append(token.text)
+    return " ".join(rephrased_sentence)
+
 #quitar tildes
 def quitarTildes(frase):
   replacements = (
@@ -126,35 +160,60 @@ except:
 
 
 #PARTE 3
-#reiniciar red neuronal
-tensorflow.compat.v1.reset_default_graph()
-tflearn.init_graph(num_cores=8)
+
+print(exit.shape)
+print(training.shape)
+# Crea el grafo de TensorFlow
+graph = tensorflow.Graph()
+with graph.as_default():
+
 #creamos una red neuronal #pasamos longitud de la fila
-#creamos las neuronas conectadas
-#neuronas de entrada(input layers)
-net=tflearn.input_data(shape=[None,len(training[0])])
-#neuronas intermedias(hidden layers)
-net=tflearn.fully_connected(net,int(len(training[0])),activation='relu')
-net=tflearn.fully_connected(net,int(len(training[0])),activation='softplus')
-net=tflearn.dropout(net,0.7)
-#neuronas de salida(exit layers)
-net=tflearn.fully_connected(net,len(exit[0]), activation='Softmax')
-#aplicamos regresion a nuestra red
-net=tflearn.regression(net, optimizer='adam',metric="accuracy",learning_rate=0.001, loss='categorical_crossentropy')
-model =tflearn.DNN(net,tensorboard_verbose=0)
-#print(len(all_words))
-#moldeamos el modelo (n_epoch son las veces que se revisa la base de datos para obtener respuestas)
-#bath_size son el # de entradas
-#show metric muestrav el contenido
+    #creamos las neuronas conectadas
 
-if os.path.isfile(dir_path+"/Entrenamiento/model.tflearn.index"):
-  model.load(dir_path+"/Entrenamiento/model.tflearn")
-else:
-  model.fit(training,exit, show_metric=True, batch_size=20,n_epoch=300)
-  model.save("Entrenamiento/model.tflearn")
+    #neuronas de entrada(input layers)
+    net=tflearn.input_data(shape=[None,len(training[0])])
 
-#EVALUACION DEL MODELO
-print("EVALUACION DEL MODELO",model.evaluate(training,exit),"%")
+
+    #neuronas intermedias(hidden layers)
+    net=tflearn.fully_connected(net,len(training[0]),activation="relu")
+    net=tflearn.fully_connected(net,len(training[0]),activation="softplus")
+    net=tflearn.dropout(net,0.9)
+
+    #normalizar
+    net = tflearn.batch_normalization(net)
+    # Agregar una capa completamente conectada con 58 neuronas y activación 'softmax'
+    net = tflearn.fully_connected(net, len(exit[0]), activation='softmax')
+
+    # Definir la función de pérdida y optimizador
+    net = tflearn.regression(net, optimizer='adam',learning_rate=0.001, loss='categorical_crossentropy')
+
+    # Crear el modelo
+    model = tflearn.DNN(net)
+
+    # Después de crear el modelo
+    #from keras.callbacks import EarlyStopping
+    # early_stop = EarlyStopping(monitor='val_loss', patience=3, verbose=1)
+
+    if os.path.isfile(dir_path+"/Entrenamiento/model.tflearn.index"):
+      model.load(dir_path+"/Entrenamiento/model.tflearn")
+    else:
+      # Crear una instancia de EarlyStopCallback con un límite de 5 épocas sin mejora en la pérdida de validación
+      import callbackEarlyStop
+      early_stop = callbackEarlyStop.EarlyStopCallback(50)
+
+      # Entrenar el modelo con los datos de entrada y salida
+      model.fit(training, exit, validation_set=0.05, n_epoch=300, batch_size=20, show_metric=True)
+      # Guardar el modelo
+      model.save("Entrenamiento/model.tflearn")
+    #print(len(all_words))
+    #moldeamos el modelo (n_epoch son las veces que se revisa la base de datos para obtener respuestas)
+    #bath_size son el # de entradas
+    #show metric muestrav el contenido de la metrica
+    #EVALUACION DEL MODELO
+    print("EVALUACION DEL MODELO",model.evaluate(training,exit),"%")
+
+def similar(a, b):
+    return difflib.SequenceMatcher(None, a, b).ratio()
 
 def response(texto):
   # ojoooooooooooooooooooooo
@@ -181,13 +240,29 @@ def response(texto):
       #print(target)
       for tagAux in database['intents']:
         if tagAux['tag']==target:
+           lista_patrones=tagAux['patterns']
+           entrada_usuario = texto # aquí asumimos que has capturado la entrada del usuario en una variable llamada "input_usuario"
+           mejor_coincide = 0
+           mejor_patron = ''
+           for patron in lista_patrones:
+               similitud = similar(patron, entrada_usuario) # aquí asumimos que tienes una función para medir la similitud entre dos cadenas de texto llamada "similar"
+               if similitud > mejor_coincide:
+                   mejor_coincide = similitud
+                   mejor_patron = patron
+           print("patron-coincide:", mejor_patron)
+           
+           #indice del patron
+           indice=lista_patrones.index(mejor_patron)
            answer=tagAux['responses']
-           answer=random.choice(answer)
+           print(answer)
+           answer=answer[indice]
+           print(answer)
       print("pregunta: ",texto,"\n respuesta: ",answer,"\n porcentaje: ",max,"\n tag: ",target)
     else:
       answer= "Lo siento, no tengo información actualizada sobre esta pregunta. Por favor, contáctenos a través de nuestro número de WhatsApp que se encuentra en nuestra página web para obtener la información actualizada."
       print("pregunta: ", texto,"\n respuesta: ",answer, "\n porcentaje: ", max)
-    return answer
+    
+    return rephrase_sentence(answer)
 
 print("HABLA CONMIGO")
 bool=True
@@ -204,7 +279,7 @@ def sms_reply():
   try:
     mensaje = request.json
     texto=mensaje["sms"]
-    respuesta = response(str(texto))
+    respuesta = str(response(str(texto)))
     return respuesta
   except Exception as e:
     return e
