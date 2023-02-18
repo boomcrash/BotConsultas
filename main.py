@@ -261,8 +261,8 @@ def response(texto):
     else:
       answer= "Lo siento, no tengo información actualizada sobre esta pregunta. Por favor, contáctenos a través de nuestro número de WhatsApp que se encuentra en nuestra página web para obtener la información actualizada."
       print("pregunta: ", texto,"\n respuesta: ",answer, "\n porcentaje: ", max)
-    
-    return rephrase_sentence(answer)
+    #rephrase_sentence(answer)
+    return answer
 
 print("HABLA CONMIGO")
 bool=True
