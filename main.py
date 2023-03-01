@@ -175,10 +175,11 @@ with graph.as_default():
 
 
     #neuronas intermedias(hidden layers)
-    net=tflearn.fully_connected(net,len(training[0]),activation="relu")
-    net=tflearn.fully_connected(net,len(training[0]),activation="softplus")
+    net=tflearn.fully_connected(net,len(all_words),activation='tanh')
+    net=tflearn.fully_connected(net,len(all_words),activation='relu')
     net=tflearn.dropout(net,0.9)
 
+    
     #normalizar
     net = tflearn.batch_normalization(net)
     # Agregar una capa completamente conectada con 58 neuronas y activación 'softmax'
@@ -202,7 +203,7 @@ with graph.as_default():
       early_stop = callbackEarlyStop.EarlyStopCallback(50)
 
       # Entrenar el modelo con los datos de entrada y salida
-      model.fit(training, exit, validation_set=0.05, n_epoch=300, batch_size=20, show_metric=True)
+      model.fit(training, exit, validation_set=0.05, n_epoch=150, batch_size=20, show_metric=True)
       # Guardar el modelo
       model.save("Entrenamiento/model.tflearn")
     #print(len(all_words))
