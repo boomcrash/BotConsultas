@@ -283,7 +283,8 @@ def sms_reply():
     respuesta = str(response(str(texto)))
     return respuesta
   except Exception as e:
-    return e
+    print("error:",e)
+    return str("puedes formular diferente la pregunta?")
 
 @app.route("/products", methods=['GET'])
 def getProducts():
