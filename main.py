@@ -270,9 +270,9 @@ bool=True
 
 from flask import Flask, request
 from twilio.twiml.messaging_response import MessagingResponse
-
+from flask_cors import CORS
 app = Flask(__name__)
-
+CORS(app)
 
 #NUEVO
 @app.route("/bot", methods=['POST'])
